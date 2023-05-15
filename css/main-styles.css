@@ -24,6 +24,7 @@ body{
     width: 100%;
     top: 0;
     left: 0;
+    padding: .6em;
     position: sticky;
     color: #fff;
     margin: 0 auto;
@@ -32,8 +33,7 @@ body{
 }
 .hero__container{
     flex: 1;
-    max-width: 7%;
-
+    max-width: 9%;
 }
 .bx{
     font-size: 2.5em;
