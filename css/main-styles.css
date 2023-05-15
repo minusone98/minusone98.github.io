@@ -299,7 +299,6 @@ body{
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-around;
-
     
 }
 .nosotros__title{    
@@ -308,9 +307,7 @@ body{
     font-weight: 600;
     font-size: 200%;
     border-bottom: 2px solid rgb(255, 255, 255);
-    border-radius:3em;
     padding: .35em;
-    border-radius: 2em;
 }
 .nosotros__subtitle{
     width: 100%;
@@ -422,7 +419,6 @@ body{
     padding: .6em 1em .3em 1em ;
     margin: .6em 0;
     border-bottom: 2px solid #fff;
-    border-radius: 3em;
 
 }
 .services__titles{
@@ -467,9 +463,7 @@ body{
     font-weight: 600;
     font-size: 160%;
     border-bottom: 2px solid rgb(255, 255, 255);
-    border-radius:3em;
     padding: .5em;
-    border-radius: 2em;
     margin: 2em 0;
 }
 .form__container{
