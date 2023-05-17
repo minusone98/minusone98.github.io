@@ -168,12 +168,74 @@
         </div>
         <!-- SERVICIOS -->
         <div class="section__container section__container--servicios">
-            
         </div>
+
         <!-- FORMULARIO-->
-        <div class="section__container section__container--form">
-            
+        <div class="form" id="contacto">
+            <h5 class="form__title">COTIZÁ CON NOSOTROS</h5>
+            <form class="form__container" method="post" id="form">
+                <div class="inputs">
+                <!-- pedimos nombre-->
+                    <div class="item__form item__form--name">
+                        <input class="item__form--name"  type="text" id="nombre" name="nombre" required>
+                        <span class="barra"></span>
+                        <label for="nombre">Nombre</label>
+                    </div>
+                    <!-- pedimos email-->
+                    <div class="item__form item__form--correo">
+                        <input type="email" id="email" name="email" required>
+                        <span class="barra"></span>
+                        <label for="email">Email</label>
+                    </div>
+                    <!-- pedimos telefono-->
+                    <div class="item__form item__form--telefono">
+                        <input type="tel" id="telefono" name="telefono" required>
+                        <span class="barra"></span>
+                        <label for="telefono">Teléfono</label>
+                    </div>
+                    <!-- pedimos elegir producto/servicio-->
+                    <div class="item__form item__form--servicio">
+                        <select class="form__opc" id="opciones1" name="opciones1">
+                            <option value="opcion1">Seleccione contenedor o servicio</option>
+                            <option value="opcion1">DRY 20 STD</option>
+                            <option value="opcion2">DRY 40 STD</option>
+                            <option value="opcion3">DRY 40 HC</option>
+                            <option value="opcion4">CARCASA REEFER 40 HC</option>
+                            <option value="opcion5">TUNER REEFER</option>
+                            <option value="opcion6">REEFER 10HC</option>
+                            <option value="opcion7">REEFER 20HC</option>
+                            <option value="opcion8">REEFER 40HC</option>
+                            <option value="opcion8">REPUESTOS REEFER</option>
+                            <option value="opcion8">SERVICIO TÉCNICO</option>
+                        </select>
+                        <span class="barra"></span>
+                    </div>
+                    <!-- pedimos elegir localidad-->
+                    <div class="item__form item__form--localidad">
+                        <select class="form__opc" id="opciones2" name="opciones2">
+                            <option value="opcion1">Seleccione localidad</option>
+                            <option value="opcion1">CUSCO</option>
+                            <option value="opcion2">LIMA</option>
+                            <option value="opcion3">PIURA</option>
+                            <option value="opcion4">MOQUEGUA</option>
+                            <option value="opcion4">ICA</option>
+                        </select>
+                        <label for="opciones2"></label>
+                        <span class="barra"></span>
+                    </div>
+                </div>
+                <div class="textarea">
+                    <div class="item__form item__form--mensaje">
+                        <!-- pedimos mensaje -->
+                        <label for="mensaje"></label>
+                        <textarea class="form__textarea" id="mensaje" name="mensaje" required></textarea>
+                        <button class="form__btn" type="submit">Enviar</button>
+                    </div>
+                    <!--  boton enviar  -->
+                </div>
+            </form>
         </div>
+        
         <!-- <div class="form" id="contacto">
             <h5 class="form__title">COTIZA CON NOSOTROS</h5>
             <form class="form__container" method="post" id="form">
