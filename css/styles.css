@@ -3,6 +3,9 @@
 :root{
     /* Colores */
     --blanco: #fafafa;
+    --azulSaes: #2c5375;
+    --azulSaesFont: #140833;
+
     --e-global-color-primary: #6EC1E4;                          
     --e-global-color-secondary: #54595F;
     --e-global-color-text: #7A7A7A;
@@ -28,7 +31,7 @@
     --tipo-secundaria: 'Roboto', sans-serif;
 
     /*Animacion*/
-    --scale-up: 1.07;
+    --scale-up: 1.08;
 }
 body{
     background: #f1f1f1 none no-repeat fixed center center;
@@ -41,7 +44,7 @@ body{
     width: 100%;
 }
 /* HEADER STYLES*/
-.header{
+.nav__container{
     background: var(--blanco);
     position: fixed;
     top: 0;
@@ -64,28 +67,27 @@ body{
     height: 100%;
 }
 /* HEADER STICKY ANIMATIONS */
-.header__sticky{
-    transition: all 1s ease;
-    background: #4054b2; 
+.nav__sticky{
 }
-.header__sticky .nav__list{
-    transform: translateX(-20%);
-    transition: all 1s ease;
+.nav__sticky .nav__list{
+    transform: translateX(-25%);
+    transition: all 1.5s ease-in-out; 
+    /* display: flex;
+    align-items: center;
+    justify-content:center;*/
 }
-.header__sticky .nav__logo{
-    opacity: 0;
+.nav__sticky .nav__logo{
+    /* opacity: 1; */
 }
-.header__sticky .nav__link{
-    color: #fff;
+.nav__sticky .nav__link{
 }
-.header__sticky .nav__link:hover{
-    color: var(--e-global-color-primary);
+.nav__sticky .nav__link:hover{
 }
-.header__sticky .nav__svg--flag:hover{
-    box-shadow: 0 0 .2em #ffffff;
+.nav__sticky .nav__svg--flag:hover{
+    /* box-shadow: 0 0 .2em #ffffff;
     border-radius: 50%;
     padding: .2em;
-    transition: all .7s ease;
+    transition: all .7s ease; */
 }
 
 /* END HEADER STICKY ANIMATIONS*/
@@ -96,7 +98,6 @@ body{
     margin-left: 4em;
 }
 .nav__list{
-    transform: translateX(-20%);
     transition: all 1s ease;
     margin: 0 1em;
     display: flex;
@@ -104,7 +105,6 @@ body{
     justify-content: flex-end;
     align-items: center;
     flex: 5;
-    transform: translateX(-5%);
 }
 .nav__item{
     margin: 0 .5em;
@@ -114,19 +114,19 @@ body{
     line-height: 1.2;
     color: #000;
     font-family: var(--tipo-principal); /* DETERMINAR */
-    font-size: 114%;
+    font-size: 95%;
     font-weight: 500;
     text-align: center;
 }
 .nav__link:hover{
-    color: var(--e-global-color-primary);
+    color: #140833;
     scale:var(--scale-up);
     transition: scale .5s ease;
 }
 .nav__svg{
 
 }
-.nav__svg--menu{
+.nav__svg--burguer{
     display: none;
     
 }
@@ -141,3 +141,5 @@ body{
     padding: .2em;
     transition: all .7s ease;
 }
+
+/* */

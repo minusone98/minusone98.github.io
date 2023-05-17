@@ -1,14 +1,12 @@
-// NAVEGATION CODE
-let nav = document.querySelector('.header');
+// STICKY NAVEGATION BAR 
+let nav = document.querySelector('.nav__container');
     window.addEventListener("scroll", ()=>{
         if(document.documentElement.scrollTop > 18){
-            nav.classList.add('header__sticky');
+            nav.classList.add('nav__sticky');
         }else{
-            nav.classList.remove('header__sticky');
-
+            nav.classList.remove('nav__sticky');
         };
     });
-
 
 
 
