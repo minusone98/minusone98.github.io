@@ -10,44 +10,115 @@ let nav = document.querySelector('.nav__container');
 
 
 
-// SLIDER CODE
-const   slider                = document.querySelector('#slider');
-let     sliderSection         = document.querySelectorAll('.slider__section');
-let     sliderSectionLast     = sliderSection[sliderSection.length-1];
+// NEW SLIDER CODE
 
-const btnLeft = document.querySelector('#btn__left');
-const btnRight = document.querySelector('#btn__right');
+// let index = 1;
+// muestraSlides(index);
+// function moveSlide(n){
+//     muestraSlides(index +=n);
 
-slider.insertAdjacentElement("afterbegin", sliderSectionLast);
+// }
+// function posicionSlide(){
+//     muestraSlides(index=n);
+// }
+// /**/
+// function muestraSlides(n){
+//     let i;
+//     let slides = document.getElementsByClassName('.slider__page');
+//     let barras = document.getElementsByClassName('.slider__bar');
 
-function next(){
-    let sliderSectionFirst = document.querySelectorAll('.slider__section')[0];
-    slider.style.marginLeft = "-200%";
-    slider.style.transition = "all .7s";
-    setTimeout(function(){
-        slider.style.transition = "none";
-        slider.insertAdjacentElement("beforeend", sliderSectionFirst)
-        slider.style.marginLeft = "-100%";
-    },700);
+//     if (n > slides.length){
+//         index = 1;
+//     }
+//     if (n < 1){
+//         index = slides.length();
+//     }
+//     for(i = 0; i < slides.length; i++){
+//         slides[i].style.display = 'none';
+//     }
+//     for(i = 0; i < slider.length; i++){
+//         slides[i].className = barras[i].className.replace('bar__active',"");
+//     }
+
+//     slides.[index-1].style.display = 'block';
+//     barras[indice-1].className += 'bar__active';
+// }
+
+let indice = 1;
+muestraSlides(indice);
+
+function avanzaSlide(n){
+    muestraSlides( indice+=n );
 }
-btnRight.addEventListener('click', ()=>
-    next() 
-);
 
-function prev(){
-    let   sliderSection     = document.querySelectorAll('.slider__section');
-    let   sliderSectionLast = sliderSection[sliderSection.length-1];
-    slider.style.marginLeft = "0";
-    slider.style.transition = "all .7s";
-    setTimeout(function(){
-        slider.style.transition = "none";
-        slider.insertAdjacentElement("afterbegin", sliderSectionLast)
-        slider.style.marginLeft = "-100%";
-    },700);
+function posicionSlide(n){
+    muestraSlides(indice=n);
 }
-btnLeft.addEventListener('click', ()=>
-    prev() 
-);
+// setInterval(function tiempo(){
+//     muestraSlides(indice+=1)
+// },4000);
+
+function muestraSlides(n){
+    let i;
+    let slides = document.getElementsByClassName('slider__page');
+    let barras = document.getElementsByClassName('bar');
+
+    if(n > slides.length){
+        indice = 1;
+    }
+    if(n < 1){
+        indice = slides.length;
+    }
+    for(i = 0; i < slides.length; i++){
+        slides[i].style.display = 'none';
+    }
+    for(i = 0; i < barras.length; i++){
+        barras[i].className = barras[i].className.replace(" bar__active", "");
+    }
+
+    slides[indice-1].style.display = 'block';
+    barras[indice-1].className += ' active';
+
+}
+
+
+// const   slider                = document.querySelector('#slider');
+// let     sliderSection         = document.querySelectorAll('.slider__section');
+// let     sliderSectionLast     = sliderSection[sliderSection.length-1];
+
+// const btnLeft = document.querySelector('#btn__left');
+// const btnRight = document.querySelector('#btn__right');
+
+// slider.insertAdjacentElement("afterbegin", sliderSectionLast);
+
+// function next(){
+//     let sliderSectionFirst = document.querySelectorAll('.slider__section')[0];
+//     slider.style.marginLeft = "-200%";
+//     slider.style.transition = "all .7s";
+//     setTimeout(function(){
+//         slider.style.transition = "none";
+//         slider.insertAdjacentElement("beforeend", sliderSectionFirst)
+//         slider.style.marginLeft = "-100%";
+//     },700);
+// }
+// btnRight.addEventListener('click', ()=>
+//     next() 
+// );
+
+// function prev(){
+//     let   sliderSection     = document.querySelectorAll('.slider__section');
+//     let   sliderSectionLast = sliderSection[sliderSection.length-1];
+//     slider.style.marginLeft = "0";
+//     slider.style.transition = "all .7s";
+//     setTimeout(function(){
+//         slider.style.transition = "none";
+//         slider.insertAdjacentElement("afterbegin", sliderSectionLast)
+//         slider.style.marginLeft = "-100%";
+//     },700);
+// }
+// btnLeft.addEventListener('click', ()=>
+//     prev() 
+// );
 
 // setInterval(function(){
 //     next()
