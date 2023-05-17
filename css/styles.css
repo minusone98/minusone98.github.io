@@ -70,8 +70,8 @@ body{
 .nav__sticky{
 }
 .nav__sticky .nav__list{
-    transform: translateX(-25%);
-    transition: all 1.5s ease-in-out; 
+    transform: translateX(-23%);
+    transition: all 1s ease-in-out; 
     /* display: flex;
     align-items: center;
     justify-content:center;*/
@@ -136,10 +136,8 @@ body{
     cursor: pointer;
 }
 .nav__svg--flag:hover{
-    box-shadow: 0 0 .2em #000;
-    border-radius: 50%;
-    padding: .2em;
-    transition: all .7s ease;
+    scale: 1.08;
+    transition: all .5s ease;
 }
 
 /* */
