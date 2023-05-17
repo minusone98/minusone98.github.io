@@ -87,7 +87,6 @@ Fuentes:        --e-global-typography-primary-font-family: "Roboto";
                 --e-global-typography-accent-font-weight: 500;
 
 
-
 ## INFORMACION PROYECTO
 
 ## SE CONSIDERA
