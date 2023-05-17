@@ -1,7 +1,20 @@
-// SLIDER CODE
+// NAVEGATION CODE
+let nav = document.querySelector('.header');
+    window.addEventListener("scroll", ()=>{
+        if(document.documentElement.scrollTop > 18){
+            nav.classList.add('header__sticky');
+        }else{
+            nav.classList.remove('header__sticky');
 
-const   slider            = document.querySelector('#slider');
-let     sliderSection     = document.querySelectorAll('.slider__section');
+        };
+    });
+
+
+
+
+// SLIDER CODE
+const   slider                = document.querySelector('#slider');
+let     sliderSection         = document.querySelectorAll('.slider__section');
 let     sliderSectionLast     = sliderSection[sliderSection.length-1];
 
 const btnLeft = document.querySelector('#btn__left');

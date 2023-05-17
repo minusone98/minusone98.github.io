@@ -1,0 +1,143 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+:root{
+    /* Colores */
+    --blanco: #fafafa;
+    --e-global-color-primary: #6EC1E4;                          
+    --e-global-color-secondary: #54595F;
+    --e-global-color-text: #7A7A7A;
+    --e-global-color-accent: #61CE70;
+    --e-global-color-224662e4: #4054b2;
+    --e-global-color-50a85cba: #23A455;
+    --e-global-color-42907c82: #000;
+    --e-global-color-689aeba7: #54595F;
+
+
+    /* Tipografía */
+    --e-global-typography-primary-font-family: "Roboto";           
+    --e-global-typography-primary-font-weight: 600;
+    --e-global-typography-secondary-font-family: "Roboto Slab";
+    --e-global-typography-secondary-font-weight: 400;
+    --e-global-typography-text-font-family: "Roboto";
+    --e-global-typography-text-font-weight: 400;
+    --e-global-typography-accent-font-family: "Roboto";
+    --e-global-typography-accent-font-weight: 500;
+
+    /*Tipografías extras */
+    --tipo-principal: 'Montserrat', sans-serif;
+    --tipo-secundaria: 'Roboto', sans-serif;
+
+    /*Animacion*/
+    --scale-up: 1.07;
+}
+body{
+    background: #f1f1f1 none no-repeat fixed center center;
+    max-width: 1600px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    display: block;
+}
+.main{
+    width: 100%;
+}
+/* HEADER STYLES*/
+.header{
+    background: var(--blanco);
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin:auto;
+    width: 100%;
+    padding: .2em;
+    transition: all 1s ease;
+    color: #000000;
+    font-weight: 500;
+    box-shadow: 0 0 .2em #000000,
+                0 0 .2em #000000;
+}
+.nav{
+    padding: 0 1em;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+/* HEADER STICKY ANIMATIONS */
+.header__sticky{
+    transition: all 1s ease;
+    background: #4054b2; 
+}
+.header__sticky .nav__list{
+    transform: translateX(-20%);
+    transition: all 1s ease;
+}
+.header__sticky .nav__logo{
+    opacity: 0;
+}
+.header__sticky .nav__link{
+    color: #fff;
+}
+.header__sticky .nav__link:hover{
+    color: var(--e-global-color-primary);
+}
+.header__sticky .nav__svg--flag:hover{
+    box-shadow: 0 0 .2em #ffffff;
+    border-radius: 50%;
+    padding: .2em;
+    transition: all .7s ease;
+}
+
+/* END HEADER STICKY ANIMATIONS*/
+
+/* CONTINUE HEADER STYLES */
+.nav__logo{
+    max-width: 6em;
+    margin-left: 4em;
+}
+.nav__list{
+    transform: translateX(-20%);
+    transition: all 1s ease;
+    margin: 0 1em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 5;
+    transform: translateX(-5%);
+}
+.nav__item{
+    margin: 0 .5em;
+}
+.nav__link{
+    padding: .2em;
+    line-height: 1.2;
+    color: #000;
+    font-family: var(--tipo-principal); /* DETERMINAR */
+    font-size: 114%;
+    font-weight: 500;
+    text-align: center;
+}
+.nav__link:hover{
+    color: var(--e-global-color-primary);
+    scale:var(--scale-up);
+    transition: scale .5s ease;
+}
+.nav__svg{
+
+}
+.nav__svg--menu{
+    display: none;
+    
+}
+.nav__svg--flag{
+    margin: 0 2em;
+    max-width: 3em;
+    cursor: pointer;
+}
+.nav__svg--flag:hover{
+    box-shadow: 0 0 .2em #000;
+    border-radius: 50%;
+    padding: .2em;
+    transition: all .7s ease;
+}

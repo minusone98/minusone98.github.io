@@ -4,17 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
 
     <!--FAVICON-->
-    <link rel="shorcut icon" href="../img/saesIco.ico">
-    <!--BOXICONS-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!--GOOGLE FONTS-->
+    <link rel="shorcut icon" href="../img/peru-icon-square.png">
+
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/main-styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
     <title> Saes Containers | Inicio</title>
 </head>
@@ -22,16 +17,12 @@
     <!-- HEADER -->
     <header class="header">
         <nav class="nav">
-            <div class="hero__container">
-                <img class="hero" src="../img/saes-best-logo.png" alt="cyaSvg">
-            </div>
-            <i class='bx bx-menu' id="menu__icon"></i>
+            <a class="nav__logo" href="#home">
+                <img src="../img/saes-best-logo-blue.png" alt="cyaSvg">
+            </a>
             <ul class="nav__list">
                 <li class="nav__item" id="item">
                     <a href="#home" class="nav__link">Inicio</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#nosotros" class="nav__link">Nosotros</a>
                 </li>
                 <li class="nav__item">
                     <a href="#containers" class="nav__link">Contenedores</a>
@@ -40,190 +31,135 @@
                     <a href="#servicios" class="nav__link">Servicios</a>
                 </li>
                 <li class="nav__item">
+                    <a href="#nosotros" class="nav__link">Nosotros</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#blog" class="nav__link">Blog</a>
+                </li>
+                <li class="nav__item">
                     <a href="#contacto" class="nav__link">Contacto</a>
                 </li>
             </ul>
+            <div class="nav__svg nav__svg--menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            </div>
+            <div class="nav__svg nav__svg--flag">
+                <!-- CAMBIAR LOGO DE PERU -->
+                <img src="../img/peru-icon-circle.png" alt="PeruFlag">
+            </div>
+        </nav>
     </header>
 
-    <!-- SLIDER-->
-    <div  id="home" class="slider__container">
-        <div class="slider" id="slider">
-            <div class="slider__section">
-                <div class="section__content">
-                    <h3 class="slider__subtitle--1">Somos</h3>
-                    <h2 class="slider__title--1">Líderes</h2>
-                    <h3 class="slider__subtitle--a1">En venta de contenedores en latinoamérica</h3>
-                    <span class="btn__offer btn__offer--1 ">Leer más</span>
+    <main class="main">
+        <!-- SLIDER-->
+        <div  id="home" class="slider__container">
+            <div class="slider" id="slider">
+                <div class="slider__section">
+                    <div class="section__content">
+                        <h3 class="slider__subtitle--1">Somos</h3>
+                        <h2 class="slider__title--1">Líderes</h2>
+                        <h3 class="slider__subtitle--a1">En venta de contenedores en latinoamérica</h3>
+                        <span class="btn__offer btn__offer--1 ">Leer más</span>
+                    </div>
+                    <img src="../img/hero1.jpg" alt="{img 1}" class="slider__img">
                 </div>
-                <img src="../img/hero1.jpg" alt="{img 1}" class="slider__img">
-            </div>
-            <div class="slider__section">
-                <div class="section__content">
-                    <h3 class="slider__subtitle--2">Somos</h3>
-                    <h2 class="slider__title--2">Vendedores de contenedores</h2>
-                    <h3 class="slider__subtitle--a2">Stock en más de 30 puertos.</h3>
-                    <span class="btn__offer btn__offer--2">Leer más</span>
+                <div class="slider__section">
+                    <div class="section__content">
+                        <h3 class="slider__subtitle--2">Somos</h3>
+                        <h2 class="slider__title--2">Vendedores de contenedores</h2>
+                        <h3 class="slider__subtitle--a2">Stock en más de 30 puertos.</h3>
+                        <span class="btn__offer btn__offer--2">Leer más</span>
+                    </div>
+                    <img src="../img/hero2.jpg" alt="{img 2}" class="slider__img">
                 </div>
-                <img src="../img/hero2.jpg" alt="{img 2}" class="slider__img">
-            </div>
-            <div class="slider__section">
-                <div class="section__content">
-                    <h3 class="slider__subtitle--3">Somos</h3>
-                    <h2 class="slider__title--3">Líderes</h2>
-                    <h3 class="slider__subtitle--a3">En venta de contenedores en latinoamérica</h3>
-                    <span class="btn__offer btn__offer--3">Leer más</span>
+                <div class="slider__section">
+                    <div class="section__content">
+                        <h3 class="slider__subtitle--3">Somos</h3>
+                        <h2 class="slider__title--3">Líderes</h2>
+                        <h3 class="slider__subtitle--a3">En venta de contenedores en latinoamérica</h3>
+                        <span class="btn__offer btn__offer--3">Leer más</span>
+                    </div>
+                    <img src="../img/hero3.jpg" alt="{img 3}" class="slider__img">
                 </div>
-                <img src="../img/hero3.jpg" alt="{img 3}" class="slider__img">
+            </div>
+            <div class="buttons">
+                <span class="slider__btn btn__left" id="btn__left">&#60</span>
+                <span class="slider__btn btn__right" id="btn__right">&#62</span>
             </div>
         </div>
-        <div class="buttons">
-            <span class="slider__btn btn__left" id="btn__left">&#60</span>
-            <span class="slider__btn btn__right" id="btn__right">&#62</span>
-        </div>
-    </div>
-
-    <!-- NOSOTROS -->
-    <div id="nosotros" class="nosotros">
-        <section class="nosotros__company">
-            <div class="nosotros__titles">
-                <h4 class="nosotros__subtitle--a">SOPORTE INTERNACIONAL</h4>
-                <h3 class="nosotros__title">OUR COMPANY</h3>
-                <h4 class="nosotros__subtitle">SOMOS UN AGENTE INTERNACIONAL EN EL COMERCIO DE CONTENEDORES Y VENTAS LOCALES.</h4>
-            </div>
-            <p class="nosotros__paragraph">
-                <span>CONTAINERS YA! es uno de los especialistas más importantes en brindar soluciones de contenedores marítimos desde 2013. Vendemos y alquilamos contenedores marítimos y contenedores de almacenamiento en todos los países de América del Norte, Central y del Sur con la máxima seguridad y flexibilidad.<br><br></span><span>
-                Desde nuestro Head Quarter ubicado en Miami, Estados Unidos, somos un actor internacional en el comercio de contenedores y ventas locales con sucursales en toda la región, por lo que tenemos un conocimiento de mercado muy importante y calificado.
-                <br><br></span>
-                <span>Con un acceso incomparable al suministro global de contenedores, gracias a nuestras alianzas con importantes líneas navieras y empresas de arrendamiento de contenedores, nuestro experimentado equipo de ventas de contenedores está listo para ayudarlo con su próximo proyecto relacionado con contenedores de envío.<br></span>
-                <span>Si buscas adquirir cualquier modelo de contenedores, en Container Ya! estamos felices de satisfacer sus necesidades.</span>
-            </p>
-        </section>
-        <section class="nosotros__experience">
-            <div class="nosotros__titles nosotros__titles--a">
-                <h4 class="nosotros__subtitle--a">WHAT DIFFERENTIATES US</h4>
-                <h3 class="nosotros__title">OUR EXPERIENCE</h3>
-                <h4 class="nosotros__subtitle">OUR LEADERSHIP</h4>
-            </div>
-            <p class="nosotros__paragraph">
-                <span>Nuestra andadura comienza en el año 2013, donde iniciamos formalmente nuestras operaciones, adquiriendo Contenedores de las principales navieras y Arrendadoras de Contenedores.</span><br><span>
-                Gracias al crecimiento de nuestra empresa ya nuestra forma de trabajar, Containers Ya! ha logrado posicionarse a nivel mundial, firmando grandes alianzas e incluso acuerdos exclusivos para la venta de contenedores con muchos de nuestros proveedores, para gran parte de Estados Unidos y Latinoamérica.<br><br></span>
-                <span>
-                Gracias al crecimiento sostenido de Containers Ya!, hemos abierto oficinas regionales en los diferentes países de Latinoamérica, posicionando nuestra empresa y nuestra marca, como una empresa líder en venta de contenedores.<br></span>
-                <span>Hoy creemos que nuestro esfuerzo y dedicación nos ha hecho merecedores de un importante nombre y prestigio en la industria del Contenedor Marítimo.</span>
-            </p>
-        </section>
-    </div>
-
-    <!-- CARDS-->
-    <div class="cards__container"  id="containers">
-        <div class="cards">
-            <div class="card">
-                <h4 class="card__title">CONTENEDORES MARITIMOS</h4>
-                <img src="../img/cm1.jpg" alt="CONTENEDORES MARITIMOS" class="card__img">
-                <p class="card__paragraph">Contenedor Marítimo para transporte de carga seca o ideales para usarlos como bodegas.</p>
-                <a href="#" class="card__info">+ Información</a>
-            </div>
-            <div class="card">
-                <h4 class="card__title">CARCASAS REEFER</h4>
-                <img src="../img/cm2.jpg" alt="CARCASAS REEFER" class="card__img">
-                <p class="card__paragraph">Carcasas de Contenedor Refrigerado NO Operativos, ideales para Proyectos Modulares de construcción habitacional.</p>
-                <a href="#" class="card__info">+ Información</a>
-            </div>
-            <div class="card">
-                <h4 class="card__title">CONTENEDORES REFRIGERADOS</h4>
-                <img src="../img/reefer.jpg" alt="CONTENEDORES REFRIGERADOS" class="card__img">
-                <p class="card__paragraph">Contenedor Refrigerados 100% Operativos, ideales para cargas que se necesiten preservar en temperaturas constantes.</p>
-                <a href="#" class="card__info">+ Información</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- SERVICES -->
-    <section id="servicios" class="services">
-        <div class="services__img">
-            <img src="../img/svTec.jpg" alt="">
-        </div>
-        <div class="services__titles">
-            <h4 class="services__title">Servicio técnico y mantenciones preventivas</h4>     
-            <p class="services__paragraph">
-                En Containers Ya! entendemos la importancia de mantener su carga perecible en óptimas condiciones, ya que sabemos el alto costo que implica tener inconvenientes técnicos con su carga y tener que lamentar perdidas innecesarias de mercadería
-            </p>      
-        </div>
+         -->
         
-    </section>
+        <!-- CONTENEDORES -->
+        
+        <!-- SERVICIOS -->
 
-    <!-- FORMULARIO-->
-    <div class="form" id="contacto">
-        <h5 class="form__title">COTIZA CON NOSOTROS</h5>
-        <form class="form__container" method="post" id="form">
-            <div class="inputs">
-            <!-- pedimos nombre-->
-                <div class="item__form item__form--name">
-                    <input class="item__form--name"  type="text" id="nombre" name="nombre" required>
-                    <span class="barra"></span>
-                    <label for="nombre">Nombre</label>
+        <!-- FORMULARIO-->
+        <!-- <div class="form" id="contacto">
+            <h5 class="form__title">COTIZA CON NOSOTROS</h5>
+            <form class="form__container" method="post" id="form">
+                <div class="inputs">
+                    <div class="item__form item__form--name">
+                        <input class="item__form--name"  type="text" id="nombre" name="nombre" required>
+                        <span class="barra"></span>
+                        <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="item__form item__form--correo">
+                        <input type="email" id="email" name="email" required>
+                        <span class="barra"></span>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="item__form item__form--telefono">
+                        <input type="tel" id="telefono" name="telefono" required>
+                        <span class="barra"></span>
+                        <label for="telefono">Teléfono</label>
+                    </div>
+                    <div class="item__form item__form--servicio">
+                        <select class="form__opc" id="opciones1" name="opciones1">
+                            <option value="opcion1">Seleccione contenedor o servicio</option>
+                            <option value="opcion1">DRY 20 STD</option>
+                            <option value="opcion2">DRY 40 STD</option>
+                            <option value="opcion3">DRY 40 HC</option>
+                            <option value="opcion4">CARCASA REEFER 40 HC</option>
+                            <option value="opcion5">TUNER REEFER</option>
+                            <option value="opcion6">REEFER 10HC</option>
+                            <option value="opcion7">REEFER 20HC</option>
+                            <option value="opcion8">REEFER 40HC</option>
+                            <option value="opcion8">REPUESTOS REEFER</option>
+                            <option value="opcion8">SERVICIO TÉCNICO</option>
+                        </select>
+                        <span class="barra"></span>
+                    </div>
+                    <div class="item__form item__form--localidad">
+                        <select class="form__opc" id="opciones2" name="opciones2">
+                            <option value="opcion1">Seleccione localidad</option>
+                            <option value="opcion1">CUSCO</option>
+                            <option value="opcion2">LIMA</option>
+                            <option value="opcion3">PIURA</option>
+                            <option value="opcion4">MOQUEGUA</option>
+                            <option value="opcion4">ICA</option>
+                        </select>
+                        <label for="opciones2"></label>
+                        <span class="barra"></span>
+                    </div>
                 </div>
-                <!-- pedimos email-->
-                <div class="item__form item__form--correo">
-                    <input type="email" id="email" name="email" required>
-                    <span class="barra"></span>
-                    <label for="email">Email</label>
+            
+                <div class="textarea">
+                    <div class="item__form item__form--mensaje">
+                        <label for="mensaje"></label>
+                        <textarea class="form__textarea" id="mensaje" name="mensaje" required></textarea>
+                        <button class="form__btn" type="submit">Enviar</button>
+                    </div>
                 </div>
-                <!-- pedimos telefono-->
-                <div class="item__form item__form--telefono">
-                    <input type="tel" id="telefono" name="telefono" required>
-                    <span class="barra"></span>
-                    <label for="telefono">Teléfono</label>
-                </div>
-                <!-- pedimos elegir producto/servicio-->
-                <div class="item__form item__form--servicio">
-                    <select class="form__opc" id="opciones1" name="opciones1">
-                        <option value="opcion1">Seleccione contenedor o servicio</option>
-                        <option value="opcion1">DRY 20 STD</option>
-                        <option value="opcion2">DRY 40 STD</option>
-                        <option value="opcion3">DRY 40 HC</option>
-                        <option value="opcion4">CARCASA REEFER 40 HC</option>
-                        <option value="opcion5">TUNER REEFER</option>
-                        <option value="opcion6">REEFER 10HC</option>
-                        <option value="opcion7">REEFER 20HC</option>
-                        <option value="opcion8">REEFER 40HC</option>
-                        <option value="opcion8">REPUESTOS REEFER</option>
-                        <option value="opcion8">SERVICIO TÉCNICO</option>
-                    </select>
-                    <span class="barra"></span>
-                </div>
-                <!-- pedimos elegir localidad-->
-                <div class="item__form item__form--localidad">
-                    <select class="form__opc" id="opciones2" name="opciones2">
-                        <option value="opcion1">Seleccione localidad</option>
-                        <option value="opcion1">CUSCO</option>
-                        <option value="opcion2">LIMA</option>
-                        <option value="opcion3">PIURA</option>
-                        <option value="opcion4">MOQUEGUA</option>
-                        <option value="opcion4">ICA</option>
-                    </select>
-                    <label for="opciones2"></label>
-                    <span class="barra"></span>
-                </div>
-            </div>
-
-            <div class="textarea">
-                <div class="item__form item__form--mensaje">
-                    <!-- pedimos mensaje -->
-                    <label for="mensaje"></label>
-                    <textarea class="form__textarea" id="mensaje" name="mensaje" required></textarea>
-                    <button class="form__btn" type="submit">Enviar</button>
-                </div>
-                <!--  boton enviar  -->
-            </div>
-
-        </form>
-
-    </div>
+            </form>
+        </div> -->
+    </main>
+    
    
-          
+          <div class="asd">
+            <a href="#" id="contacto"></a>
+          </div>
     <!-- FOOTER-->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="items">
             <div class="item1">
                 <h3 class="footer__title">Nuestra Compañía</h3>
@@ -254,13 +190,12 @@
             </div>
         </div>
         <div class="copy">
-            Containers Ya! 2020 | All rights reserved.
+           Saes Containers 2023 | All rights reserved. Diseñado por minusone.
         </div>
+    </footer> -->
 
-    </footer>
-
-
-
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/a5c5bf6f9c.js" crossorigin="anonymous"></script>
     <script src="../js/main.js"></script>
 </body>
 </html> 
