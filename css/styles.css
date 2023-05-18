@@ -554,7 +554,6 @@ input:focus~.barra::before{
     border-radius: 2em;
     cursor: pointer;
     border: .1em solid rgb(255, 255, 255);
-    background: #f7f7f77c;
 }
 .section__container--nosotros{
     display: flex;
@@ -711,8 +710,7 @@ section .card .image img{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    padding: 2em;
-
+    margin-top: 4em;
 }
 .steps__container{
     display: grid;
