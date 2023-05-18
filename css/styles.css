@@ -372,11 +372,15 @@ body{
     flex-flow: column nowrap;
 }
 .form__title{
-    padding-bottom: 1em;
-    line-height: 1.1;
     font-weight: 600;
+    z-index: 100;
     font-size: 3em;
+    line-height: 1.4;
+    padding: .4em 1em;
+    color: var(--blanco);
+    background: #f7f7f77c;
 }
+
 .form__container{
     box-shadow: 0 0 .3em #fff;
     padding: 2em 2em;
@@ -507,15 +511,7 @@ input:focus~.barra::before{
     transition: scale .2s;
 }
 
-
-/*NOSOTROS (PASO A PASO)*/
-/* .section__container--nosotros{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
+/*NOSOTROS (PASO A PASO)
 .nosotros__container--slider{
     min-height: 100vh;
     display: flex;
@@ -724,10 +720,35 @@ input:focus~.barra::before{
 
 
 /* SLIDER EMPLEADOS*/
+
+
+.section__title--nosotros{
+    font-weight: 600;
+    z-index: 100;
+    font-size: 3em;
+    line-height: 1.4;
+    padding: .4em 1em;
+    color: var(--blanco);
+    background: #f7f7f77c;
+}
+.section__container--nosotros{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background:var(--e-global-color-224662e4);
+    padding: 2em;
+    margin: 0 auto;
+}
 .swiper{
-    width: 950px;
+    width: 1200px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding:1em 0 ;
   }
+
   .card{
+    flex-direction: 1;
     position: relative;
     background: #fff;
     border-radius: 20px;
@@ -780,6 +801,7 @@ input:focus~.barra::before{
     transition: all 0.3s ease;
     cursor: pointer;
   }
+
   .card .media-icons i:hover{
     opacity: 1;
   }
