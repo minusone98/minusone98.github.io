@@ -733,7 +733,6 @@ section .card .image img{
     background: transparent;
     display: flex;
     flex-flow: column nowrap;
-    border: .2em solid #333333;
     border-radius: 2em;
     align-items: center;
     justify-content: space-evenly;
@@ -761,11 +760,13 @@ section .card .image img{
 }
 .step__titles p{
     background: transparent;
-    color: #333333;
+    color: #333;
     font-size: 1.1em;
     margin: 1em 0em;
     padding: .5em;
     text-align: center;
+    border: .2em solid var(--e-global-color-224662e4);
+    border-radius: 1em;
     hyphens: none;
 }
 /*FOOTER*/
