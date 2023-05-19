@@ -749,7 +749,7 @@ section .card .image img{
 }
 .step__img--2{
     margin-top: 3em;
-    height: 54%;
+    height: 58%;
 }
 .step__img--3{
     height: 54.7%;
@@ -758,11 +758,11 @@ section .card .image img{
     height: 69%;
 }
 .step__img--5{
-    height: 54%;
+    height: 60%;
     padding: 4em;
 }
 .step__img--6{
-    height: 51%;
+    height: 53%;
     padding: 0;
     margin-top: 5em;
 }
@@ -842,4 +842,22 @@ section .card .image img{
     hyphens: none;
     line-height: 1.2;
     font-size: 105%;
+}
+
+.wpp{
+    width: 3.5em;
+    border-radius: .2em solid #000;
+    display: inline-block;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    z-index: 500;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+.wpp:hover{
+    scale: 1.2;
+    transition: scale .3s ease;
 }
