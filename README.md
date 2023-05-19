@@ -21,15 +21,15 @@
     el proceso de creacion.
 
 ## PRESENTACIÓN 
-    Como estudiante y practicante constante de programacion, me emociona la posibilidad de presentarme para este proyecto,
-    sin embargo me veo obligado a sincerarme y comentarles que no poseo de los conocimientos suficientes
+    Como estudiante y practicante constante de programacion, me emociona la posibilidad de presentarme para este 
+    proyecto, sin embargo me veo obligado a sincerarme y comentarles que no poseo de los conocimientos suficientes
     en desarrollo web para ofrecerles un sitio profesional. 
 
     Por otro lado, mi pasion por la tecnologia y la emprendeduria me ha llevado a tener que aprender a utilizar herramientas, 
-    distintas tecnologias y adquirir conocimientos tecnicos sobre diferentes disciplinas para poder sortear los obstaculos que 
-    la falta experticia y el mundo real provee. 
+    distintas tecnologias y adquirir conocimientos tecnicos sobre diferentes disciplinas para poder sortear los obstaculos 
+    que la falta experticia y el mundo real provee. 
     
-    Concluyendo esta presentación, dejo una breve lista con mi experiencia y conocimientos, 
+    Concluyendo esta presentación, dejo una breve reseña de mi experiencia y conocimientos.
 
 ## ESTUDIOS 
     - Anteriormente 2 años cursados en Economia - Universidad Nacional de Cuyo.
