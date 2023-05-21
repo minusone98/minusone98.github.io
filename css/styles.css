@@ -500,14 +500,12 @@ input:focus~.barra::before{
     padding: .4em .4em;
     margin: 1em .2em;
     box-shadow: 0 0 .3em #fff;
-
     color: #feffff;
 }
 .item__form--mensaje{
     display: flex;
     flex-flow: column nowrap;
     color: #092c3a;
-    
 }
 .form__opc{
     background: var(--azulSaesFont);
