@@ -120,41 +120,40 @@
 
     <!-- MAIN -->
     <main class="main">
-        <!-- CONTENEDORES -->
-        <section class="section__container section__container--contenedores" id="containers">
-            <div class="section__title--contenedores">
-                <h2 class="section__">NUESTROS PRODUCTOS</h2>
-            </div>
-            <div class="section__cards">
-                <div class="section__card">
-                    <figure  class="card__img card__img--a">
-                        <img src="../img/saes-best-logo.png" alt="containerA">
-                    </figure>
-                    <div class="card__text">
-                        <h3 class="card__title">CONTENEDORES MARITIMOS</h3>
-                        <p class="card__content">Contenedor Marítimo para transporte de carga seca o ideales para usarlos como bodegas o transporte.</p>
+<!-- NUESTROS PRODUCTOS -->
+        <article class="article article__productos">
+            <section class="productos" id="productos">
+                <h2 class="productos__h2">Nuestros Productos</h2>
+                <div class="productos__cards">
+                    <div class="productos__cards">
+                        <div class="productos__card">
+                            <h3 class="productos__h3" title="nombre del producto">Contenedores marítimos y refrigerados</h3>
+                            <img src="../img/contenedores-scaled.jpg" alt="imagen_producto" class="productos__img">
+                            <p class="productos__p">Contenedor Marítimo para transporte de carga seca o ideales para usarlos como bodegas.</p>
+                            <span class="productos__btn">+ Información</span>
+                        </div>
+                        <div class="productos__card">
+                            <h3 class="productos__h3" title="nombre del producto">Carcasas Reefer</h3>
+                            <img src="../img/contenedores-scaled.jpg" alt="imagen_producto" class="productos__img">
+                            <p class="productos__p">Carcasas de Contenedor Refrigerado NO Operativos, ideales para Proyectos Modulares de construcción habitacional.</p>
+                            <span class="productos__btn">+ Información</span>
+                        </div>
+                        <div class="productos__card">
+                            <h3 class="productos__h3" title="nombre del producto">Contenedores Refrigerados</h3>
+                            <img src="../img/contenedores-scaled.jpg" alt="imagen_producto" class="productos__img">
+                            <p class="productos__p">Contenedor Refrigerados 100% Operativos, ideales para cargas que se necesiten preservar en temperaturas constantes.</p>
+                            <span class="productos__btn">+ Información</span>
+                        </div>
+                        <!-- <div class="productos__card">
+                            <h3 class="productos__h3" title="nombre del producto">Contenedores marítimos y refrigerados</h3>
+                            <img src="../img/contenedores-scaled.jpgg" alt="imagen_producto" class="productos__img">
+                            <p class="productos__p">Contenedor Marítimo para transporte de carga seca o ideales para usarlos como bodegas.</p>
+                            <span class="productos__btn">+ Información</span>
+                        </div> -->
                     </div>
                 </div>
-                <div class="section__card">
-                    <figure class="card__img card__img--b">
-                        <img src="../img/saes-best-logo.png" alt="containerB">
-                    </figure>
-                    <div class="card__text">
-                        <h3 class="card__title">CARCASAS REEFER</h3>
-                        <p class="card__content">Carcasas de Contenedor Refrigerado NO Operativos, ideales para Proyectos Modulares de construcción habitacional.</p>
-                    </div>
-                </div>
-                <div class="section__card">
-                    <figure class="card__img card__img--c">
-                        <img src="../img/saes-best-logo.png" alt="containerC">
-                    </figure>
-                    <div class="card__text">
-                        <h3 class="card__title">CONTENEDORES REFRIGERADOS</h3>
-                        <p class="card__content">Contenedor Refrigerados 100% Operativos, ideales para cargas que se necesiten preservar en temperaturas constantes.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </article>
             <!-- FORMULARIO-->
         <section class="section__container section__container--form" id="contacto">
             <div class="section__title--form">
@@ -405,81 +404,45 @@
             <div class="swiper-pagination"></div>
         </div>
     </section>
-    <section class="section__container section__container--proceso" id="blog">
-        <div class="proceso__container">
-            <div class="section__title--proceso">
-                <h2 class="form__title">Nuestro proceso paso a paso</h2>
-            </div>
-            <div class="steps__container">
-                <div class="step">
-                    <div class="step__content">
-                        <figure class="step__img step__img--1">
-                            <img src="../img/ilustrations/undraw_co-working.svg" alt="">
-                        </figure>
-                        <div class="step__titles">
-                            <h4>Paso 1: consulta del cliente</h4>
-                            <p>El cliente pregunta sobre los contenedores que necesita o analiza el próximo proyecto potencial para que lo ayudemos a planificar</p>
-                        </div>
-                    </div>
+    <article class="article article__proceso">
+        <section class="proceso">
+            <h2 class="proceso__h2">Nuestro proceso paso a paso</h2>
+            <div class="proceso__cards">
+                <div class="proceso__card">
+                    <h3 class="proceso__h3">Consulta del cliente</h3>
+                    <img src="../img/ilustrations/undraw_co-working.svg" alt="img" class="proceso__img">
+                    <p class="proceso__p">El cliente pregunta sobre los contenedores que necesita o analiza el próximo proyecto potencial para que lo ayudemos a planificar</p>
                 </div>
-                <div class="step">
-                    <div class="step__content">
-                        <figure class="step__img step__img--2">
-                            <img src="../img/ilustrations/undraw_printing_invoices_-5-r4r.svg" alt="">
-                        </figure>
-                        <div class="step__titles">
-                            <h4>Paso 2: Cotización de contenedores</h4>
-                            <p>Una vez que se obtiene el equipo del contenedor, le proporcionamos al cliente una cotización del contenedor por correo electrónico.</p>
-                        </div>
-                    </div>
+                <div class="proceso__card">
+                    <h3 class="proceso__h3">Cotización de contenedores</h3>
+                    <img src="../img/ilustrations/undraw_printing_invoices_-5-r4r.svg" alt="img2" class="proceso__img">
+                    <p class="proceso__p">Una vez que se obtiene el equipo del contenedor, le proporcionamos al cliente una cotización del contenedor por correo electrónico.</p>
                 </div>
-                <div class="step" >
-                    <div class="step__content">
-                        <figure class="step__img step__img--3">
-                            <img src="../img/ilustrations/undraw_business_deal.svg" alt="">
-                        </figure>
-                        <div class="step__titles">
-                            <h4>Paso 3: Confirmación del cliente</h4>
-                            <p>Una vez que el cliente confirme que desea continuar con su pedido, solicitaremos el nombre, la dirección, el número de teléfono de contacto, el correo electrónico de contacto y la identificación fiscal de su empresa para configurar su cuenta.</p>
-                        </div>
-                    </div>
+                <div class="proceso__card">
+                    <h3 class="proceso__h3">Confirmación del cliente</h3>
+                    <img src="../img/ilustrations/undraw_business_deal.svg" alt="img3" class="proceso__img">
+                    <p class="proceso__p">Una vez que el cliente confirme que desea continuar con su pedido, solicitaremos el nombre, la dirección, el número de teléfono de contacto, el correo electrónico de contacto y la identificación fiscal de su empresa para configurar su cuenta.
+                    </p>
                 </div>
-                <div class="step">
-                    <div class="step__content">
-                        <figure class="step__img step__img--4">
-                            <img src="../img/ilustrations/undraw_mail_re_duel.svg" alt="">
-                        </figure>
-                        <div class="step__titles">
-                            <h4>Paso 4: Factura</h4>
-                            <p>Una vez que CTC reciba la información y los documentos necesarios, enviaremos al cliente una factura por correo electrónico.</p>
-                        </div>
-                    </div>
+                <div class="proceso__card">
+                    <h3 class="proceso__h3">Facturación</h3>
+                    <img src="../img/ilustrations/undraw_transfer_money.svg" alt="img4" class="proceso__img">
+                    <p class="proceso__p">Una vez que CTC reciba la información y los documentos necesarios, enviaremos al cliente una factura por correo electrónico.
+                    </p>
                 </div>
-                <div class="step">
-                    <div class="step__content ">
-                        <figure class="step__img step__img--5">
-                            <img src="../img/ilustrations/undraw_transfer_money.svg" alt="">
-                        </figure>
-                        <div class="step__titles">
-                            <h4>Paso 5: Pago, Liberación y Contenedor</h4>
-                            <p>Una vez que el cliente pague la factura, le enviaremos por correo electrónico una Liberación del contenedor (para que ellos programen su propia recolección del contenedor) O CTC organizará y programará la entrega del contenedor al cliente</p>
-                        </div>
-                    </div>
+                <div class="proceso__card">
+                    <h3 class="proceso__h3">Pago, Liberación y Contenedor</h3>
+                    <img src="../img/ilustrations/undraw_mail_re_duel.svg" alt="img5" class="proceso__img">
+                    <p class="proceso__p">Una vez que el cliente pague la factura, le enviaremos por correo electrónico una Liberación del contenedor (para que ellos programen su propia recolección del contenedor) O CTC organizará y programará la entrega del contenedor al cliente</p>
                 </div>
-                <div class="step">
-                    <div class="step__content">
-                        <figure class="step__img step__img--6">
-                            <img src="../img/ilustrations/undraw_container_ship.svg" alt="">
-                        </figure>
-                        <div class="step__titles">
-                            <h4>Paso 6: Finalización del pedido</h4>
-                            <p>Una vez que el cliente recibe su contenedor, CTC enviará una factura revisada y finalizada que muestra el número completo del contenedor, ya que los contenedores se retiran primero de la pila de contenedores.</p>
-                        </div>
-                    </div>
+                <div class="proceso__card">
+                    <h3 class="proceso__h3">Finalización del pedido</h3>
+                    <img src="../img/ilustrations/undraw_container_ship.svg" alt="img6" class="proceso__img">
+                    <p class="proceso__p">Una vez que el cliente recibe su contenedor, CTC enviará una factura revisada y finalizada que muestra el número completo del contenedor, ya que los contenedores se retiran primero de la pila de contenedores.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </article>
 </main>
 <footer class="footer">
     <div class="items">
