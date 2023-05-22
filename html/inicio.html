@@ -19,199 +19,259 @@
 </head>
 <body>
     <header class="header">
-        <!-- LOGO  -->
-        <h1 class="header__h1" title="containers saes">
-            <a class="header__logo" title="containers saes" href="#home">
-                <img src="../img/saes-best-logo-blue.pngg" alt="cyaSvg">
+        <div class="header__content">
+            <!-- LOGO  -->
+            <h1 class="header__h1" title="containers saes">
+                <a class="header__logo" title="containers saes" href="#home">
+                    <img src="../img/saes-best-logo-blue.png" alt="cyaSvg">
+                </a>
+            </h1>
+            <!-- NAV MENU  -->
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item" id="item">
+                        <a href="#home" class="header__link">Inicio</a>
+                        <span></span>
+                    </li>
+                    <li class="header__item">
+                        <a href="#productos" class="header__link">Contenedores</a>
+                        <span></span>
+                    </li>
+                    <li class="header__item">
+                        <a href="#servicios" class="header__link">Léeme</a>
+                        <span></span>
+                    </li>
+                    <li class="header__item">
+                        <a href="#contacto" class="header__link">Contacto</a>
+                        <span></span>
+                    </li>
+                    <li class="header__item">
+                        <a href="#nosotros" class="header__link">Nosotros</a>
+                        <span></span>
+                    </li>
+                    <li class="header__item">
+                        <a href="#blog" class="header__link">Blog</a>
+                        <span></span>
+                    </li>
+                </ul>
+            </nav>
+            <!-- BANDERA PERU -->
+            <a href="#contacto" class="header__flag">
+                <img src="../img/peru-icon-circle.png" alt="PeruFlag">
             </a>
-        </h1>
-        <!-- NAV MENU  -->
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item" id="item">
-                    <a href="#home" class="header__link">Inicio</a>
-                </li>
-                <li class="header__item">
-                    <a href="#containers" class="header__link">Contenedores</a>
-                </li>
-                <li class="header__item">
-                    <a href="#servicios" class="header__link">Léeme</a>
-                </li>
-                <li class="header__item">
-                    <a href="#contacto" class="header__link">Contacto</a>
-                </li>
-                <li class="header__item">
-                    <a href="#nosotros" class="header__link">Nosotros</a>
-                </li>
-                <li class="header__item">
-                    <a href="#blog" class="header__link">Blog</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- BANDERA PERU -->
-        <a href="#contacto" class="header__flag">
-            <img src="../img/peru-icon-circle.pngg" alt="PeruFlag">
-        </a>
-        <!-- MENU HAMBURGUESA -->
-        <div class="header__toggle">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            <!-- MENU HAMBURGUESA -->
+            <div class="header__toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            </div>
         </div>
+        
     </header>
 
     <main class="main">
         <!-- SLIDER -->
-        <div class="slider__container">
+        <div class="slider__container" id="home">
+            <!-- SLIDER SECCION -->
+            <div class="slider__page fade">
+                <div class="slider__content">
+                    <div class="slider__titles">
+                        <h3 class="slider__title--a">La nueva forma de vender</h3>
+                        <h3 class="slider__title--b">Contenedores</h3>
+                        <h3 class="slider__title--c"></h3>                    </div>
+                    <div class="slider__btn">
+                        <a href="#" class="slider__btn--cotizar">Leer más</a>
+                    </div>
+                    <div class="slider__img">
+                        <img src="../img/hero1.jpg" alt="hero1">
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDER SECCION -->
+            <div class="slider__page fade">
+                <div class="slider__titles">
+                    <h3 class="slider__title--a">La nueva forma de vender</h3>
+                    <h3 class="slider__title--b">Contenedores</h3>
+                    <h3 class="slider__title--c"></h3>
+                </div>
+                <div class="slider__btn">
+                    <a href="#" class="slider__btn--cotizar">Leer más</a>
+                </div>
+                <div class="slider__img">
+                    <img src="../img/hero2.jpg" alt="hero1">
+                </div>
+            </div>
+            
+            <!-- SLIDER SECCION -->
+            <div class="slider__page fade" id="home">
+                <div class="slider__titles">
+                    <h3 class="slider__title--a">La nueva forma de vender</h3>
+                    <h3 class="slider__title--b">Contenedores</h3>
+                    <h3 class="slider__title--c"></h3>                </div>
+                <div class="slider__btn">
+                    <a href="#" class="slider__btn--cotizar">Leer más</a>
+                </div>
+                <div class="slider__img">
+                    <img src="../img/hero3.jpg" alt="hero1">
+                </div>
+            </div>
             <!-- FLECHAS -->
-            <span class="slider__arrow slider__arrow--left">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z"/></svg>
-            </span>
-            <span class="slider__arrow slider__arrow--right">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>            </span>
-            <!-- IMAGENES -->
-            <div class="slider__images">
-                <img src="../img/" alt="img1">
-                <img src="../" alt="img2">
-                <img src="../" alt="img3">
+            <div class="slider__arrows">
+                <a href="#" class="back" onclick="avanzaSlide(-1)">&#10094</a>
+                <a href="#" class="forward" onclick="avanzaSlide(1)">&#10095</a>
             </div>
-            <!-- BARRAS -->
-            <div class="slider__bars">
-                <span class="slider__bar"></span>
-                <span class="slider__bar"></span>
-                <span class="slider__bar"></span>
-            </div>
+            <!-- BARRAS SLIDER -->
+            <!-- <div class="slider__bar">
+                <span class="bar" onclick="posicionSlide(1)"></span>
+                <span class="bar" onclick="posicionSlide(2)"></span>
+                <span class="bar" onclick="posicionSlide(3)"></span>
+            </div> -->
         </div>
 
         <!-- NUESTROS PRODUCTOS -->
-        <section class="productos">
-            <h2 class="productos__h2">Nuestros Productos</h2>
-            <div class="productos__cards">
+        <article class="article article__productos">
+            <section class="productos" id="productos">
+                <h2 class="productos__h2">Nuestros Productos</h2>
                 <div class="productos__cards">
-                    <div class="productos__card">
-                        <h3 class="productos__h3" title="nombre del producto">Contenedores marítimos y refrigerados</h3>
-                        <img src="../img/cm1.jpgg" alt="imagen_producto" class="productos__img">
-                        <p class="productos__p">Contenedor Marítimo para transporte de carga seca o ideales para usarlos como bodegas.</p>
-                        <span class="productos__btn">+ Información</span>
-                    </div>
-                    <div class="productos__card">
-                        <h3 class="productos__h3" title="nombre del producto">CARCASAS REEFER</h3>
-                        <img src="../img/cm2.jpgg" alt="imagen_producto" class="productos__img">
-                        <p class="productos__p">Carcasas de Contenedor Refrigerado NO Operativos, ideales para Proyectos Modulares de construcción habitacional.</p>
-                        <span class="productos__btn">+ Información</span>
-                    </div>
-                    <div class="productos__card">
-                        <h3 class="productos__h3" title="nombre del producto">CONTENEDORES REFRIGERADOS</h3>
-                        <img src="../img/cm3.pngg" alt="imagen_producto" class="productos__img">
-                        <p class="productos__p">Contenedor Refrigerados 100% Operativos, ideales para cargas que se necesiten preservar en temperaturas constantes.</p>
-                        <span class="productos__btn">+ Información</span>
+                    <div class="productos__cards">
+                        <div class="productos__card">
+                            <h3 class="productos__h3" title="nombre del producto">Contenedores marítimos y refrigerados</h3>
+                            <img src="../img/contenedores-scaled.jpg" alt="imagen_producto" class="productos__img">
+                            <p class="productos__p">Contenedor Marítimo para transporte de carga seca o ideales para usarlos como bodegas.</p>
+                            <span class="productos__btn">+ Información</span>
+                        </div>
+                        <div class="productos__card">
+                            <h3 class="productos__h3" title="nombre del producto">Carcasas Reefer</h3>
+                            <img src="../img/contenedores-scaled.jpg" alt="imagen_producto" class="productos__img">
+                            <p class="productos__p">Carcasas de Contenedor Refrigerado NO Operativos, ideales para Proyectos Modulares de construcción habitacional.</p>
+                            <span class="productos__btn">+ Información</span>
+                        </div>
+                        <div class="productos__card">
+                            <h3 class="productos__h3" title="nombre del producto">Contenedores Refrigerados</h3>
+                            <img src="../img/contenedores-scaled.jpg" alt="imagen_producto" class="productos__img">
+                            <p class="productos__p">Contenedor Refrigerados 100% Operativos, ideales para cargas que se necesiten preservar en temperaturas constantes.</p>
+                            <span class="productos__btn">+ Información</span>
+                        </div>
+                        <!-- <div class="productos__card">
+                            <h3 class="productos__h3" title="nombre del producto">Contenedores marítimos y refrigerados</h3>
+                            <img src="../img/contenedores-scaled.jpgg" alt="imagen_producto" class="productos__img">
+                            <p class="productos__p">Contenedor Marítimo para transporte de carga seca o ideales para usarlos como bodegas.</p>
+                            <span class="productos__btn">+ Información</span>
+                        </div> -->
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </article>
 
         <!-- formulario -->
-        <section class="form">
-            <h2 class="form__h2">COTIZA CON NOSOTROS</h2>
-            <form class="form__container" method="post" id="form">
-                <div class="form__inputs">
-                    <div class="form__name">
-                        <input class="form__name--input"  type="text" id="nombre" name="nombre" required>
-                        <label for="nombre">Nombre</label>
+        <article class="article article__formulario" id="contacto">
+            <section class="form">
+                <h2 class="form__h2">COTIZA CON NOSOTROS</h2>
+                <!-- <p class="form__p">Haz aqui tu pregunta o simplemente contáctate con nosotros.</p> -->
+                <form class="form__container" method="post" >
+                    <div class="form__inputs">
+                        <div class="form__name">
+                            <label for="nombre">Nombre</label>
+                            <input class="form__name--input"  type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <!-- pedimos email-->
+                        <div class="form__email">
+                            <label for="email">Email</label>
+                            <input  class="form__email--input" type="email" id="email" name="email" required>
+                        </div>
+                        <!-- pedimos telefono-->
+                        <div class="form__tel">
+                            <label for="telefono">Teléfono</label>
+                            <input class="form__tel--input" type="tel" id="telefono" name="telefono" required>
+                        </div>
+                        <!-- pedimos elegir producto/servicio-->
+                        <div class="form__producto">
+                            <select class="form__opc form__opc--producto" id="opciones1" name="opciones1">
+                                <option value="opcion1">Seleccione contenedor o servicio</option>
+                                <option value="opcion1">DRY 20 STD</option>
+                                <option value="opcion2">DRY 40 STD</option>
+                                <option value="opcion3">DRY 40 HC</option>
+                                <option value="opcion4">CARCASA REEFER 40 HC</option>
+                                <option value="opcion5">TUNER REEFER</option>
+                                <option value="opcion6">REEFER 10HC</option>
+                                <option value="opcion7">REEFER 20HC</option>
+                                <option value="opcion8">REEFER 40HC</option>
+                                <option value="opcion8">REPUESTOS REEFER</option>
+                                <option value="opcion8">SERVICIO TÉCNICO</option>
+                            </select>
+                        </div>
+                        <!-- pedimos elegir localidad-->
+                        <div class="form__localidad">
+                            <select class="form__opc form__opc--localidad" id="opciones2" name="opciones2">
+                                <option value="opcion1">Seleccione localidad</option>
+                                <option value="opcion1">CUSCO</option>
+                                <option value="opcion2">LIMA</option>
+                                <option value="opcion3">PIURA</option>
+                                <option value="opcion4">MOQUEGUA</option>
+                                <option value="opcion4">ICA</option>
+                            </select>
+                            <label for="opciones2"></label>
+                        </div>
                     </div>
-                    <!-- pedimos email-->
-                    <div class="form__email">
-                        <input  class="form__email--input" type="email" id="email" name="email" required>
-                        <label for="email">Email</label>
+                    <div class="form__textarea">
+                        <!-- pedimos mensaje -->
+                        <label for="mensaje"></label>
+                        <textarea class="form__textarea--input" id="mensaje" name="mensaje" required></textarea>
+                        <button class="form__textarea--btn" type="submit">Enviar</button>
                     </div>
-                    <!-- pedimos telefono-->
-                    <div class="form__tel">
-                        <input class="form__tel--input" type="tel" id="telefono" name="telefono" required>
-                        <label for="telefono">Teléfono</label>
-                    </div>
-                    <!-- pedimos elegir producto/servicio-->
-                    <div class="form__producto">
-                        <select class="form__opc form__opc--producto" id="opciones1" name="opciones1">
-                            <option value="opcion1">Seleccione contenedor o servicio</option>
-                            <option value="opcion1">DRY 20 STD</option>
-                            <option value="opcion2">DRY 40 STD</option>
-                            <option value="opcion3">DRY 40 HC</option>
-                            <option value="opcion4">CARCASA REEFER 40 HC</option>
-                            <option value="opcion5">TUNER REEFER</option>
-                            <option value="opcion6">REEFER 10HC</option>
-                            <option value="opcion7">REEFER 20HC</option>
-                            <option value="opcion8">REEFER 40HC</option>
-                            <option value="opcion8">REPUESTOS REEFER</option>
-                            <option value="opcion8">SERVICIO TÉCNICO</option>
-                        </select>
-                    </div>
-                    <!-- pedimos elegir localidad-->
-                    <div class="form__localidad">
-                        <select class="form__opc form__opc--localidad" id="opciones2" name="opciones2">
-                            <option value="opcion1">Seleccione localidad</option>
-                            <option value="opcion1">CUSCO</option>
-                            <option value="opcion2">LIMA</option>
-                            <option value="opcion3">PIURA</option>
-                            <option value="opcion4">MOQUEGUA</option>
-                            <option value="opcion4">ICA</option>
-                        </select>
-                        <label for="opciones2"></label>
-                    </div>
-                </div>
-                <div class="form__textarea">
-                    <!-- pedimos mensaje -->
-                    <label for="mensaje"></label>
-                    <textarea class="form__textarea--input" id="mensaje" name="mensaje" required></textarea>
-                    <button class="form__textarea--btn" type="submit">Enviar</button>
-                </div>
-            </form>
-        </section>
+                </form>
+            </section>
+        </article>
         
+        <article class="article article__proceso">
+            <section class="proceso">
+                <h2 class="proceso__h2">Nuestro proceso paso a paso</h2>
+                <div class="proceso__cards">
+                    <div class="proceso__card">
+                        <h3 class="proceso__h3">Consulta del cliente</h3>
+                        <img src="../img/ilustrations/undraw_co-working.svg" alt="img" class="proceso__img">
+                        <p class="proceso__p">El cliente pregunta sobre los contenedores que necesita o analiza el próximo proyecto potencial para que lo ayudemos a planificar</p>
+                    </div>
+                    <div class="proceso__card">
+                        <h3 class="proceso__h3">Cotización de contenedores</h3>
+                        <img src="../img/ilustrations/undraw_printing_invoices_-5-r4r.svg" alt="img2" class="proceso__img">
+                        <p class="proceso__p">Una vez que se obtiene el equipo del contenedor, le proporcionamos al cliente una cotización del contenedor por correo electrónico.</p>
+                    </div>
+                    <div class="proceso__card">
+                        <h3 class="proceso__h3">Confirmación del cliente</h3>
+                        <img src="../img/ilustrations/undraw_business_deal.svg" alt="img3" class="proceso__img">
+                        <p class="proceso__p">Una vez que el cliente confirme que desea continuar con su pedido, solicitaremos el nombre, la dirección, el número de teléfono de contacto, el correo electrónico de contacto y la identificación fiscal de su empresa para configurar su cuenta.
+                        </p>
+                    </div>
+                    <div class="proceso__card">
+                        <h3 class="proceso__h3">Facturación</h3>
+                        <img src="../img/ilustrations/undraw_transfer_money.svg" alt="img4" class="proceso__img">
+                        <p class="proceso__p">Una vez que CTC reciba la información y los documentos necesarios, enviaremos al cliente una factura por correo electrónico.
+                        </p>
+                    </div>
+                    <div class="proceso__card">
+                        <h3 class="proceso__h3">Pago, Liberación y Contenedor</h3>
+                        <img src="../img/ilustrations/undraw_mail_re_duel.svg" alt="img5" class="proceso__img">
+                        <p class="proceso__p">Una vez que el cliente pague la factura, le enviaremos por correo electrónico una Liberación del contenedor (para que ellos programen su propia recolección del contenedor) O CTC organizará y programará la entrega del contenedor al cliente</p>
+                    </div>
+                    <div class="proceso__card">
+                        <h3 class="proceso__h3">Finalización del pedido</h3>
+                        <img src="../img/ilustrations/undraw_container_ship.svg" alt="img6" class="proceso__img">
+                        <p class="proceso__p">Una vez que el cliente recibe su contenedor, CTC enviará una factura revisada y finalizada que muestra el número completo del contenedor, ya que los contenedores se retiran primero de la pila de contenedores.</p>
+                    </div>
+                </div>
+            </section>
+        </article>
         <!-- seccion de  paso a paso -->
-        <section class="proceso">
-            <h2 class="proceso__h2">Nuestro proceso paso a paso</h2>
-            <div class="proceso__cards">
-                <div class="proceso__card">
-                    <h3 class="proceso__h3">Proceso Numero</h3>
-                    <img src="" alt="img" class="proceso__img">
-                    <p class="proceso__p"></p>
-                </div>
-                <div class="proceso__card">
-                    <h3 class="proceso__h3">Proceso Numero</h3>
-                    <img src="" alt="img2" class="proceso__img">
-                    <p class="proceso__p"></p>
-                </div>
-                <div class="proceso__card">
-                    <h3 class="proceso__h3">Proceso Numero</h3>
-                    <img src="" alt="img3" class="proceso__img">
-                    <p class="proceso__p"></p>
-                </div>
 
-                <div class="proceso__card">
-                    <h3 class="proceso__h3">Proceso Numero</h3>
-                    <img src="" alt="img4" class="proceso__img">
-                    <p class="proceso__p"></p>
-                </div>
-                <div class="proceso__card">
-                    <h3 class="proceso__h3">Proceso Numero</h3>
-                    <img src="" alt="img5" class="proceso__img">
-                    <p class="proceso__p"></p>
-                </div>
-                <div class="proceso__card">
-                    <h3 class="proceso__h3">Proceso Numero</h3>
-                    <img src="" alt="img6" class="proceso__img">
-                    <p class="proceso__p"></p>
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <div class="copy"></div>
-            <div class="whatsapp">
-                <img src="#" alt="LogoWpp">
-            </div>
-        </footer>
     </main>
-
+        
+    <footer class="footer">
+        <div class="copy">SAES CONTAINERS 2023 © Todos los derechos reservados.</div>
+        <div class="whatsapp">
+            <img src="../img/wpp-png.png" alt="LogoWpp">
+        </div>
+    </footer>
     <script src="https://kit.fontawesome.com/a5c5bf6f9c.js" crossorigin="anonymous"></script>
-    <script src="../js/main.js"></script>
+    <script src="../js/../js/main.js"></script>
 </body>
 </html>

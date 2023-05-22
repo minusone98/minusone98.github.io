@@ -9,7 +9,6 @@ let nav = document.querySelector('.nav__container');
     });
 
 
-
 // NEW SLIDER CODE
 
 // let index = 1;
@@ -54,9 +53,9 @@ function avanzaSlide(n){
 function posicionSlide(n){
     muestraSlides(indice=n);
 }
-setInterval(function tiempo(){
-    muestraSlides(indice+=1)
-},4000);
+// setInterval(function tiempo(){
+//     muestraSlides(indice+=1)
+// },4000);
 function muestraSlides(n){
     let i;
     let slides = document.getElementsByClassName('slider__page');
@@ -80,36 +79,14 @@ function muestraSlides(n){
 
 }
 
+let width = sliderIndividual[0].clientWidth;
+let sliderIndividual = document.querySelectorAll('.slider__page')
+window.addEventListener('resize', function(){
+    width = sliderIndividual[0].clientWidth;
+});
+
 // code slider paso a paso
 
-var swiper = new Swiper(".slide-content", {
-    slidesPerView: 3,
-    spaceBetween: 25,
-    loop: true,
-    centerSlide: true,
-    fade: true,
-    grabCursor: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints:{
-        0: {
-            slidesPerView: 1,
-        },
-        520: {
-            slidesPerView: 2,
-        },
-        950: {
-            slidesPerView: 3,
-        },
-    },
-  });
 
 // const   slider                = document.querySelector('#slider');
 // let     sliderSection         = document.querySelectorAll('.slider__section');
