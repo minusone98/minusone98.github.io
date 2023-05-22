@@ -640,19 +640,81 @@ body{
     padding: 1em;
     max-width: 80%;
 }
+
+/*FOOTER ESTILOS*/
 .footer{
     background: var(--azulSaes);
     min-height: 5em;
     color: #fff;
     font-family: 'Montserrat',sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.footer__title{
+    width: 100%;
+    padding: .7em;
+    text-transform: uppercase;
+    text-align: left;
+    border-radius: var(--border-radius-button);
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    color: #34adddb0;
 
 }
+.items{
+    text-align: left;
+    hyphens: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 2em;
+    margin: 1em;
+}
+.items span{
+    border-top: .4em solid #fff;
+    width: 100%;
+}
+.item1{
+    flex-basis: 24%;
+    padding: 1em;
+}
+.item2{
+    flex-basis: 20%;
+}
+.item3{
+    flex-basis: 20%;
+    text-align: left;
+    padding: 1em;
+}
+.item__3{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .5em;
+    cursor: pointer;
+}
+.services__item{
+    cursor: pointer;
+    padding: .5em .1em;
+}
+.services__item:hover{
+    transform: translateX(7%);
+    transition: all .3s ease;
+    color: #34adddb0;
+
+}
+.item4{
+    flex-basis: 20%;
+}
+
 .copy{
     color: #fff;
     font-family: 'Montserrat',sans-serif;
     text-align: center;
     padding: 2em;
-    
+    width: 100%;
+    border-top: .15em solid #ffffffc1;    
 }
 .whatsapp{
     width: 3.5em;
