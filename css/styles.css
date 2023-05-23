@@ -44,15 +44,18 @@ body{
 .main{
     width: 100%;
 }
-.header{
-    position: relative;
-}
+
 
 /*HEADER STYLES*/
 .header{
-    width: 100%;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background: #fff;
+    width: 100%;
 }
 .header__content{
     display: flex;
@@ -128,7 +131,7 @@ body{
     max-height: 100vh;
     width: 100%;
     position: relative;
-    top: 0em;
+    top: 0;
     left: 0;
     overflow: hidden;
     /* margin: auto; */
@@ -292,6 +295,8 @@ body{
     min-height: 100vh;
     background: var(--blanco);
     position: relative;
+    color: #ffffff;
+
 }
 .productos__h2{
     color: #ffffff;
@@ -305,14 +310,15 @@ body{
     border-radius: 3em;
 }
 .productos__h3{
+    color: #ffffff;
+    font-size: 1.2em;
+    background: var(--e-global-color-224662e4);
     padding: 1em;
     font-family: 'Montserrat',sans-serif;
     text-align: center;
-    background: var(--celeste);
     border-radius: var(--border-radius-button);
 }
 .productos__cards{
-    background-color: var(--blanco);
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(16em, 1fr));
     gap: 2em;
@@ -342,6 +348,7 @@ body{
     font-family: 'Montserrat',sans-serif;
     color: inherit;
     width: 100%;
+    margin-bottom: 1em;
 }
 .productos__img{
     background: var(--blanco);
@@ -356,16 +363,20 @@ body{
     padding: 1em;
     hyphens: none;
     border-radius: 1em;
-    background: var(--celeste);
+    background: var(--e-global-color-224662e4);
     color: #ffffff;
-
+    margin: 1em 0;
     font-family: 'Montserrat',sans-serif;
 }
 .productos__btn{
-    background: var(--celeste);
     color: #ffffff;
     padding: .5em 1em;
     border-radius: var(--border-radius-button);
+
+    color: #ffffff;
+    font-size: 1.2em;
+    background: var(--e-global-color-224662e4);
+
 }
 
 
