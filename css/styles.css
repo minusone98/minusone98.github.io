@@ -228,10 +228,11 @@ body{
     font-size: 1.1em;
     top: 25em;
     left: 15em;
+    border: .2em solid #fff;
     z-index: 200;
 }
 .slider__btn--cotizar{
-    padding: 1em 4em;
+    padding: .7em 3em;
 
 }
 .slider__btn--cotizar:hover{
@@ -311,7 +312,7 @@ body{
 }
 .productos__h3{
     color: #ffffff;
-    font-size: 1.2em;
+    font-size: 1em;
     background: var(--e-global-color-224662e4);
     padding: 1em;
     font-family: 'Montserrat',sans-serif;
@@ -365,6 +366,7 @@ body{
     border-radius: 1em;
     background: var(--e-global-color-224662e4);
     color: #ffffff;
+    text-align: center;
     margin: 1em 0;
     font-family: 'Montserrat',sans-serif;
 }

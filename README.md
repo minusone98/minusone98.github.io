@@ -9,7 +9,7 @@
 
 ## COMENTARIO CONTEXTUAL
     El sitio web que usted verá es solo una maquetación rápida que no representa mi mejor trabajo,
-    es solo con el fin de presentar una solución rópida ante su solicitud, por lo que el sitio 
+    es solo con el fin de presentar una solución rápida ante su solicitud, por lo que el sitio 
     fue construido en un lapso de pocas horas.
     Por otra parte, espero le sea de utilidad para aclarar dudas y conceptualizar ideas.
 
@@ -23,7 +23,7 @@
     // Se considera utilizar metodologia BEM en la escritura de código
     // Se considera crear comentarios útiles en el código para accesibilidad y facil lectura para otro programador/es.
     // Se considera la creacion de un sitio web accesible, animado y moderno.
-    // Se considera la instalación APIs de Instagram, Google Maps y Whatsapp.
+    // Se considera la instalación APIs.
 
 ## NO SE CONSIDERA
     // No se considera servicio de formulario validado.
@@ -38,14 +38,14 @@
     en desarrollo web para ofrecerles un sitio profesional. 
 
     Por otro lado, mi pasion por la tecnologia y la emprendeduria me ha llevado a tener que aprender a utilizar herramientas, 
-    distintas tecnologias y adquirir conocimientos tecnicos sobre diferentes disciplinas para poder sortear los obstaculos 
+    distintas tecnologías y adquirir conocimientos técnicos sobre diferentes disciplinas para poder sortear los obstaculos 
     que la falta experticia y el mundo real provee. 
     
     Concluyendo esta presentación, dejo una breve reseña de mi experiencia y conocimientos.
 
 ## ESTUDIOS 
     - Anteriormente 2 años cursados en Economia - Universidad Nacional de Cuyo.
-    - Cursando 1er año en Tecnicatura en programacion.
+    - Cursando 1er año en Tecnicatura en programación.
     - Boot-Camp full stack (Gratuito online).
     - Conocimientos en Marketing Digital (Cursos privados online).
     - Conocimientos en diseño UX / UI.
@@ -55,7 +55,7 @@
     - Diseño de logos y elementos visuales vectorizados.
     - Diseño de flyers, publicidades, e identidad visual.
     - Capacitado ampliamente en Ventas (Capacitaciones brindadas mensualmente desde la empresa)
-    - Actualmente trabajo part-time como Asesor comercial y logistico en RAC Ingenieria.
+
 
 ## COMENTARIO EXTRA
-    // Si desea una descripcion más detallada sera de gran agrado responder cualquier duda o consulta.
+    // Si desea una descripción más detallada sera de gran agrado responder cualquier duda o consulta.
