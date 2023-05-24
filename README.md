@@ -3,7 +3,7 @@
 
 ## LINK AL SITIO ##
 
-***https://minusone98.github.io/html/index.html***
+(https://minusone98.github.io/html/index.html)
 
 ## Paulo - Bayron (17/05/2023)
 

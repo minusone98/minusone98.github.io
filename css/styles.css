@@ -223,7 +223,7 @@ body{
     position: absolute;
     background: var(--e-global-color-224662e4);
     border-radius: var(--border-radius-button);
-
+    color: #ffffff;
     font-family: 'Montserrat',sans-serif;
     font-size: 1.1em;
     top: 25em;
@@ -233,11 +233,14 @@ body{
 }
 .slider__btn--cotizar{
     padding: .7em 3em;
+    color: #ffffff;
+
 
 }
 .slider__btn--cotizar:hover{
     background: var(--azulSaesFont);
     border-radius: var(--border-radius-button);
+    color: #ffffff;
 
 }
 .btn__cotizar{
@@ -354,7 +357,6 @@ body{
 .productos__img{
     background: var(--blanco);
     border-radius: 1em;
-
 }
 .productos__img:hover{
     scale: 1.1;
@@ -378,10 +380,7 @@ body{
     color: #ffffff;
     font-size: 1.2em;
     background: var(--e-global-color-224662e4);
-
 }
-
-
 
 /* FORMULARIO*/
 .section__container--form{
