@@ -234,14 +234,11 @@ body{
 .slider__btn--cotizar{
     padding: .7em 3em;
     color: #ffffff;
-
-
 }
 .slider__btn--cotizar:hover{
     background: var(--azulSaesFont);
     border-radius: var(--border-radius-button);
     color: #ffffff;
-
 }
 .btn__cotizar{
 
@@ -249,18 +246,7 @@ body{
 .slider__img{
     
 }
-.bar{
-    cursor: pointer;
-    height: .5em;
-    width: 5em;
-    background: #dcdde1;
-    border-radius: 2em;
-    display: inline-block;
-    margin: 0 0 1em 1em;
-}
-.bar__active{
-    background: #1a35ad;
-}
+
 .fade{
     animation-name: fade;
     animation-duration:.3s;
@@ -560,7 +546,6 @@ input:focus~.barra::before{
     color: var(--blanco);
     border-radius: 2em;
     cursor: pointer;
-    border: .1em solid rgb(255, 255, 255);
 }
 .section__container--nosotros{
     display: flex;
@@ -585,14 +570,17 @@ input:focus~.barra::before{
   border-radius: 20px;
   cursor: pointer;
   margin: 20px 0;
+  
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 13px rgba(255, 255, 255, 0.4);
+
 }
 .card::before{
   content: "";
   position: absolute;
   height: 40%;
   width: 100%;
-  background: rgb(7, 135, 246);
+  background: rgb(40, 89, 133);
   border-radius: 20px 20px 0 0;
 }
 .card .card-content{

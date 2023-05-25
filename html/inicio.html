@@ -15,17 +15,246 @@
     <title> Saes Containers | Inicio</title>
 </head>
 <body>
-    <header class="header" id="home">
-
+    <!-- HEADER  -->
+    <header class="header">
+        <div class="header__content">
+            <nav class="header__nav">
+                <a class="header__logo" title="containers saes" href="#home">
+                    <img src="../img/saes-best-logo-blue.png" alt="cyaSvg">
+                </a>
+                <ul class="header__list">
+                    <li class="header__item" id="item">
+                        <a href="#home" class="header__link">Inicio</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#productos" class="header__link">Contenedores</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="../README.md"  target="_blank" class="header__link">Léeme</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#contacto" class="header__link">Contacto</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#nosotros" class="header__link">Nosotros</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#proceso" class="header__link">Blog</a>
+                    </li>
+                </ul>
+                <!-- MENU HAMBURGUESA -->
+                <div class="header__toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                </div>
+            </nav>
+            <!-- BANDERA PERU -->
+            <a href="#contacto" class="header__flag">
+                <img src="../img/peru-icon-circle.png" alt="PeruFlag">
+            </a>
+        </div>
     </header>
 
     <main class="main">
-        
+        <section class="slider__content" id="home">
+            <div class="slider__cards fade">
+                <article class="slider__card slider__card--1">
+                    <h2 class="slider__h2">La nueva forma de vender</h2>
+                    <p class="slider__p">Contenedores</p>
+                    <div class="slider__btn">Cotizar</div>
+                </article>
+                <article class="slider__card slider__card--2">
+                    <h2 class="slider__h2">La nueva forma de vender</h2>
+                    <p class="slider__p">Contenedores</p>
+                    <div class="slider__btn">Cotizar</div>
+                </article>
+                <article class="slider__card slider__card--3">
+                    <h2 class="slider__h2">La nueva forma de vender</h2>
+                    <p class="slider__p">Contenedores</p>
+                    <div class="slider__btn">Cotizar</div>
+                </article>
+            </div>
+            <a href="#" class="forward" onclick="avanzaSlide(1)">&#10095</a>
+            <a href="#" class="back" onclick="avanzaSlide(-1)">&#10094</a>
+        </section>
+
+
+        <section class="productos__content" id="productos">
+            <h3 class="section__title">Nuestros productos</h3>
+            <span></span>
+            <div class="productos__cards">
+                <article class="productos__card">
+                    <h3 class="productos__card--title">DRY 40 HC</h3>
+                    <img src="../img/dry_40_std.jpg" alt="productoName" class="producto__card--img">
+                    <p class="productos__card--p">Descripcion producto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, veniam. Commodi rerum culpa impedit illo?</p>
+                </article>
+                <article class="productos__card">
+                    <h3 class="productos__card--title">DRY 40 STD</h3>
+                    <img src="../img/dry_40_std.jpg" alt="productoName" class="producto__card--img">
+                    <p class="productos__card--p">Descripcion producto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, veniam. Commodi rerum culpa impedit illo?</p>
+                </article>
+                <article class="productos__card">
+                    <h3 class="productos__card--title">REEFER</h3>
+                    <img src="../img/dry_40_std.jpg" alt="productoName" class="producto__card--img">
+                    <p class="productos__card--p">Descripcion producto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, veniam. Commodi rerum culpa impedit illo?</p>
+                </article>
+           </div>
+        </section>
+
+        <section class="form__container section__container--form" id="contacto">
+            <h3 class="section__title">Cotiza con nosotros</h3>
+            <span class="span__form"></span>
+            <div class="form">
+                <form class="form__content" method="post" id="form">
+                    <div class="inputs">
+                    <!-- pedimos nombre-->
+                        <div class="item__form item__form--name">
+                            <input class="item__form--name"  type="text" id="nombre" name="nombre" required>
+                            <span class="barra"></span>
+                            <label for="nombre">Nombre</label>
+                        </div>
+                        <!-- pedimos email-->
+                        <div class="item__form item__form--correo">
+                            <input type="email" id="email" name="email" required>
+                            <span class="barra"></span>
+                            <label for="email">Email</label>
+                        </div>
+                        <!-- pedimos telefono-->
+                        <div class="item__form item__form--telefono">
+                            <input type="tel" id="telefono" name="telefono" required>
+                            <span class="barra"></span>
+                            <label for="telefono">Teléfono</label>
+                        </div>
+                        <!-- pedimos elegir producto/servicio-->
+                        <div class="item__form item__form--servicio">
+                            <select class="form__opc" id="opciones1" name="opciones1">
+                                <option value="opcion1">Seleccione contenedor o servicio</option>
+                                <option value="opcion1">DRY 20 STD</option>
+                                <option value="opcion2">DRY 40 STD</option>
+                                <option value="opcion3">DRY 40 HC</option>
+                                <option value="opcion4">CARCASA REEFER 40 HC</option>
+                                <option value="opcion5">TUNER REEFER</option>
+                                <option value="opcion6">REEFER 10HC</option>
+                                <option value="opcion7">REEFER 20HC</option>
+                                <option value="opcion8">REEFER 40HC</option>
+                                <option value="opcion8">REPUESTOS REEFER</option>
+                                <option value="opcion8">SERVICIO TÉCNICO</option>
+                            </select>
+                            <span class="barra"></span>
+                        </div>
+                        <!-- pedimos elegir localidad-->
+                        <div class="item__form item__form--localidad">
+                            <select class="form__opc" id="opciones2" name="opciones2">
+                                <option value="opcion1">Seleccione localidad</option>
+                                <option value="opcion1">CUSCO</option>
+                                <option value="opcion2">LIMA</option>
+                                <option value="opcion3">PIURA</option>
+                                <option value="opcion4">MOQUEGUA</option>
+                                <option value="opcion4">ICA</option>
+                            </select>
+                            <label for="opciones2"></label>
+                            <span class="barra"></span>
+                        </div>
+                    </div>
+                    <div class="textarea">
+                        <div class="item__form item__form--mensaje">
+                            <!-- pedimos mensaje -->
+                            <label for="mensaje"></label>
+                            <textarea class="form__textarea" id="mensaje" name="mensaje" required></textarea>
+                            <button class="form__btn" type="submit">Enviar</button>
+                        </div>
+                        <!--  boton enviar  -->
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- NOSOTROS -->
+        <article class="proceso__container article__proceso" id="nosotros">
+            <section class="proceso">
+                <h2 class="section__title section__title--proceso">Nuestro proceso paso a paso</h2>
+                <div class="proceso__cards">
+                    <div class="proceso__card">
+                        <h3 class="proceso__h3">Consulta del cliente</h3>
+                        <img src="../img/ilustrations/undraw_co-working.svg" alt="img" class="proceso__img proceso__img--1">
+                        <p class="proceso__p">El cliente pregunta sobre los contenedores que necesita o analiza el próximo proyecto potencial para que lo ayudemos a planificar</p>
+                    </div>
+                    <div class="proceso__card">
+                        <h3 class="proceso__h3">Cotización de contenedores</h3>
+                        <img src="../img/ilustrations/undraw_printing_invoices_-5-r4r.svg" alt="img2" class="proceso__img proceso__img--2">
+                        <p class="proceso__p">Una vez que se obtiene el equipo del contenedor, le proporcionamos al cliente una cotización del contenedor por correo electrónico.</p>
+                    </div>
+                    <div class="proceso__card">
+                        <h3 class="proceso__h3">Confirmación del cliente</h3>
+                        <img src="../img/ilustrations/undraw_business_deal.svg" alt="img3" class="proceso__img proceso__img--3">
+                        <p class="proceso__p">Una vez que el cliente confirme que desea continuar con su pedido, solicitaremos el nombre, la dirección, el número de teléfono de contacto, el correo electrónico de contacto y la identificación fiscal de su empresa para configurar su cuenta.
+                        </p>
+                    </div>
+                    <div class="proceso__card">
+                        <h3 class="proceso__h3">Facturación</h3>
+                        <img src="../img/ilustrations/undraw_transfer_money.svg" alt="img4" class="proceso__img proceso__img--4">
+                        <p class="proceso__p">Una vez que CTC reciba la información y los documentos necesarios, enviaremos al cliente una factura por correo electrónico.
+                        </p>
+                    </div>
+                    <div class="proceso__card">
+                        <h3 class="proceso__h3">Pago, Liberación y Contenedor</h3>
+                        <img src="../img/ilustrations/undraw_mail_re_duel.svg" alt="img5" class="proceso__img proceso__img--5">
+                        <p class="proceso__p">Una vez que el cliente pague la factura, le enviaremos por correo electrónico una Liberación del contenedor (para que ellos programen su propia recolección del contenedor) O CTC organizará y programará la entrega del contenedor al cliente</p>
+                    </div>
+                    <div class="proceso__card">
+                        <h3 class="proceso__h3">Finalización del pedido</h3>
+                        <img src="../img/ilustrations/undraw_container_ship.svg" alt="img6" class="proceso__img proceso__img--6">
+                        <p class="proceso__p">Una vez que el cliente recibe su contenedor, CTC enviará una factura revisada y finalizada que muestra el número completo del contenedor, ya que los contenedores se retiran primero de la pila de contenedores.</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <div class="wpp">
+            <img src="../img/wpp-png.png" alt="wpp">
+        </div>
+        <a href="#home" class="up__btn">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
     </main>
-        
     <footer class="footer">
+        <div class="items">
+            <div class="item1">
+                <h4 class="footer__title">Nuestra Compañía</h4>
+                <p class="footer__paragraph">
+                    Uno de los especialistas más importantes en brindar soluciones de contenedores marítimos desde 2013. Vendemos y alquilamos contenedores marítimos, así como contenedores de almacenamiento en todos los países de América del Norte, Central y del Sur.
+                </p>
+            </div>
+            <div class="item2">
+                <img src="../img/cm3.png" alt="img4">
+            </div>
+            <div class="item3">
+                <h4 class="footer__title">Nuestros Servicios</h4>
+                <ul>
+                    <li class="services__item">Inicio</li>
+                    <li class="services__item">Nosotros</li>
+                    <li class="services__item">Contenedores</li>
+                    <li class="services__item">Servicios</li>
+                    <li class="services__item">Blog</li>
+                    <li class="services__item">Contacto</li>
+                </ul>
+            </div>
+            <div class="item4">
+                <h4 class="footer__title">Celular</h4>
+                <p class="footer__paragraph">+51 994 608 940</p>
+                
+                <h4 class="footer__title">Horario de Atención</h4>
+                <p class="footer__paragraph">Lunes a Sábado: 8 AM - 6 PM</p>
+                
+                <h4 class="footer__title">Correo</h4>
+                <p class="footer__paragraph">info@saesperu.com</p>
+                
+                <h4 class="footer__title">Dirección</h4>
+                <p class="footer__paragraph">Av. Néstor Gambeta Km. 14.2 Subparcela A-3 – Callao Lima, Perú</p>
+            </div>
+        </div>
+        <div class="copy">
+           Saes Containers 2023 © Todos los derechos reservados.
+        </div>
     </footer>
-    
+
     <script src="https://kit.fontawesome.com/a5c5bf6f9c.js" crossorigin="anonymous"></script>
     <script src="../js/../js/inicio.js"></script>
 </body>

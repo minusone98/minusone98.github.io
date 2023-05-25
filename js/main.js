@@ -58,7 +58,7 @@ function posicionSlide(n){
 // },4000);
 function muestraSlides(n){
     let i;
-    let slides = document.getElementsByClassName('slider__page');
+    let slides = document.getElementsByClassName('slider__card');
     let barras = document.getElementsByClassName('bar');
 
     if(n > slides.length){
@@ -80,7 +80,7 @@ function muestraSlides(n){
 }
 
 let width = sliderIndividual[0].clientWidth;
-let sliderIndividual = document.querySelectorAll('.slider__page')
+let sliderIndividual = document.querySelectorAll('.slider__card')
 window.addEventListener('resize', function(){
     width = sliderIndividual[0].clientWidth;
 });
