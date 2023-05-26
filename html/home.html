@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--FAVICON-->
+    <link rel="shorcut icon" href="../img/peru-icon-square.png">
+    <!-- SWIPPER BUNDLE-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <title> Saes Containers | Inicio</title>
+</head>
+<body>
+    <!-- HEADER & SLIDER-->
+    <header class="header">
+        <div class="header__content">
+            <!-- LOGO  -->
+            <h1 class="header__h1" title="containers saes">
+                <a class="header__logo" title="containers saes" href="#home">
+                    <img src="../img/saes-best-logo-blue.png" alt="cyaSvg">
+                </a>
+            </h1>
+            <!-- NAV MENU  -->
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item" id="item">
+                        <a href="#home" class="header__link">Inicio</a>
+                        <span></span>
+                    </li>
+                    <li class="header__item">
+                        <a href="#productos" class="header__link">Contenedores</a>
+                        <span></span>
+                    </li>
+                    <li class="header__item">
+                        <a href="../README.md"  target="_blank" class="header__link">Léeme</a>
+                        <span></span>
+                    </li>
+                    <li class="header__item">
+                        <a href="#contacto" class="header__link">Contacto</a>
+                        <span></span>
+                    </li>
+                    <li class="header__item">
+                        <a href="#nosotros" class="header__link">Nosotros</a>
+                        <span></span>
+                    </li>
+                    <li class="header__item">
+                        <a href="#proceso" class="header__link">Blog</a>
+                        <span></span>
+                    </li>
+                </ul>
+            </nav>
+            <!-- BANDERA PERU -->
+            <a href="#contacto" class="header__flag">
+                <img src="../img/peru-icon-circle.png" alt="PeruFlag">
+            </a>
+            <!-- MENU HAMBURGUESA -->
+            <div class="header__toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            </div>
+        </div>
+    </header>
+       <!-- SLIDER -->
+       <div class="slider__container" id="home">
+        <!-- SLIDER SECCION -->
+        <div class="slider__page fade">
+            <div class="slider__content">
+                <div class="slider__titles">
+                    <h3 class="slider__title--a">La nueva forma de vender</h3>
+                    <h3 class="slider__title--b">Contenedores</h3>
+                    <h3 class="slider__title--c"></h3>                    </div>
+                <div class="slider__btn">
+                    <a href="#" class="slider__btn--cotizar">Leer más</a>
+                </div>
+                <div class="slider__img">
+                    <img src="../img/hero1.jpg" alt="hero1">
+                </div>
+            </div>
+        </div>
+        <!-- SLIDER SECCION -->
+        <div class="slider__page fade">
+            <div class="slider__titles">
+                <h3 class="slider__title--a">La nueva forma de vender</h3>
+                <h3 class="slider__title--b">Contenedores</h3>
+                <h3 class="slider__title--c"></h3>
+            </div>
+            <div class="slider__btn">
+                <a href="#" class="slider__btn--cotizar">Leer más</a>
+            </div>
+            <div class="slider__img">
+                <img src="../img/hero2.jpg" alt="hero1">
+            </div>
+        </div>
+        <!-- SLIDER SECCION -->
+        <div class="slider__page fade" id="home">
+            <div class="slider__titles">
+                <h3 class="slider__title--a">La nueva forma de vender</h3>
+                <h3 class="slider__title--b">Contenedores</h3>
+                <h3 class="slider__title--c"></h3>                </div>
+            <div class="slider__btn">
+                <a href="#" class="slider__btn--cotizar">Leer más</a>
+            </div>
+            <div class="slider__img">
+                <img src="../img/hero3.jpg" alt="hero1">
+            </div>
+        </div>
+        <!-- FLECHAS -->
+        <div class="slider__arrows">
+            <a href="#" class="back" onclick="avanzaSlide(-1)">&#10094</a>
+            <a href="#" class="forward" onclick="avanzaSlide(1)">&#10095</a>
+        </div>
+        <!-- BARRAS SLIDER -->
+        <!-- <div class="slider__bar">
+            <span class="bar" onclick="posicionSlide(1)"></span>
+            <span class="bar" onclick="posicionSlide(2)"></span>
+            <span class="bar" onclick="posicionSlide(3)"></span>
+        </div> -->
+    </div>
+
+    <!-- MAIN -->
+    <main class="main">
+<!-- NUESTROS PRODUCTOS -->
+        <article class="article article__productos" id="productos" >
+            <section class="productos" >
+                <h2 class="productos__h2">Nuestros Productos</h2>
+                <div class="productos__cards">
+                    <div class="productos__cards">
+                        <div class="productos__card">
+                            <h3 class="productos__h3" title="nombre del producto">Contenedores marítimos y refrigerados</h3>
+                            <img src="../img/contenedores-scaled.jpg" alt="imagen_producto" class="productos__img">
+                            <p class="productos__p">Contenedor Marítimo para transporte de carga seca o ideales para usarlos como bodegas.</p>
+                            <span class="productos__btn">+ Información</span>
+                        </div>
+                        <div class="productos__card">
+                            <h3 class="productos__h3" title="nombre del producto">Carcasas Reefer</h3>
+                            <img src="../img/contenedores-scaled.jpg" alt="imagen_producto" class="productos__img">
+                            <p class="productos__p">Carcasas de Contenedor Refrigerado NO Operativos, ideales para Proyectos Modulares de construcción habitacional.</p>
+                            <span class="productos__btn">+ Información</span>
+                        </div>
+                        <div class="productos__card">
+                            <h3 class="productos__h3" title="nombre del producto">Contenedores Refrigerados</h3>
+                            <img src="../img/contenedores-scaled.jpg" alt="imagen_producto" class="productos__img">
+                            <p class="productos__p">Contenedor Refrigerados 100% Operativos, ideales para cargas que se necesiten preservar en temperaturas constantes.</p>
+                            <span class="productos__btn">+ Información</span>
+                        </div>
+                        <!-- <div class="productos__card">
+                            <h3 class="productos__h3" title="nombre del producto">Contenedores marítimos y refrigerados</h3>
+                            <img src="../img/contenedores-scaled.jpgg" alt="imagen_producto" class="productos__img">
+                            <p class="productos__p">Contenedor Marítimo para transporte de carga seca o ideales para usarlos como bodegas.</p>
+                            <span class="productos__btn">+ Información</span>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </article>
+            <!-- FORMULARIO-->
+        <section class="section__container section__container--form" id="contacto">
+            <div class="section__title--form">
+                <h2 class="form__title">COTIZÁ CON NOSOTROS</h2>
+            </div>
+            <div class="form">
+                <form class="form__container" method="post" id="form">
+                    <div class="inputs">
+                    <!-- pedimos nombre-->
+                        <div class="item__form item__form--name">
+                            <input class="item__form--name"  type="text" id="nombre" name="nombre" required>
+                            <span class="barra"></span>
+                            <label for="nombre">Nombre</label>
+                        </div>
+                        <!-- pedimos email-->
+                        <div class="item__form item__form--correo">
+                            <input type="email" id="email" name="email" required>
+                            <span class="barra"></span>
+                            <label for="email">Email</label>
+                        </div>
+                        <!-- pedimos telefono-->
+                        <div class="item__form item__form--telefono">
+                            <input type="tel" id="telefono" name="telefono" required>
+                            <span class="barra"></span>
+                            <label for="telefono">Teléfono</label>
+                        </div>
+                        <!-- pedimos elegir producto/servicio-->
+                        <div class="item__form item__form--servicio">
+                            <select class="form__opc" id="opciones1" name="opciones1">
+                                <option value="opcion1">Seleccione contenedor o servicio</option>
+                                <option value="opcion1">DRY 20 STD</option>
+                                <option value="opcion2">DRY 40 STD</option>
+                                <option value="opcion3">DRY 40 HC</option>
+                                <option value="opcion4">CARCASA REEFER 40 HC</option>
+                                <option value="opcion5">TUNER REEFER</option>
+                                <option value="opcion6">REEFER 10HC</option>
+                                <option value="opcion7">REEFER 20HC</option>
+                                <option value="opcion8">REEFER 40HC</option>
+                                <option value="opcion8">REPUESTOS REEFER</option>
+                                <option value="opcion8">SERVICIO TÉCNICO</option>
+                            </select>
+                            <span class="barra"></span>
+                        </div>
+                        <!-- pedimos elegir localidad-->
+                        <div class="item__form item__form--localidad">
+                            <select class="form__opc" id="opciones2" name="opciones2">
+                                <option value="opcion1">Seleccione localidad</option>
+                                <option value="opcion1">CUSCO</option>
+                                <option value="opcion2">LIMA</option>
+                                <option value="opcion3">PIURA</option>
+                                <option value="opcion4">MOQUEGUA</option>
+                                <option value="opcion4">ICA</option>
+                            </select>
+                            <label for="opciones2"></label>
+                            <span class="barra"></span>
+                        </div>
+                    </div>
+                    <div class="textarea">
+                        <div class="item__form item__form--mensaje">
+                            <!-- pedimos mensaje -->
+                            <label for="mensaje"></label>
+                            <textarea class="form__textarea" id="mensaje" name="mensaje" required></textarea>
+                            <button class="form__btn" type="submit">Enviar</button>
+                        </div>
+                        <!--  boton enviar  -->
+                    </div>
+                </form>
+            </div>
+        </section>
+    <!-- NOSOTROS -->
+    <section class="section__container section__container--nosotros" id="nosotros">
+        <div class="section__title--nosotros">
+            <h2>¿Quienes Sómos?</h2>
+        </div>
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content">
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="../img/elias_web.png" alt=""> 
+                        </div>
+                        <div class="media-icons">
+                          <i class="fab fa-facebook"></i>
+                          <i class="fab fa-twitter"></i>
+                          <i class="fab fa-github"></i>
+                        </div>
+                        <div class="name-profession">
+                          <span class="name">Nombre</span>
+                          <span class="profession">correoejemplo@gmail.com</span>
+                          <span class="profession">+56 8452 58 5529</span>
+                        </div>
+                        <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <div class="button">
+                          <!-- <button class="aboutMe">About Me</button> -->
+                          <button class="hireMe">Contactáctame</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="../img/elias_web.png" alt=""> 
+                        </div>
+                        <div class="media-icons">
+                          <i class="fab fa-facebook"></i>
+                          <i class="fab fa-twitter"></i>
+                          <i class="fab fa-github"></i>
+                        </div>
+                        <div class="name-profession">
+                            <span class="name">Nombre</span>
+                            <span class="profession">correoejemplo@gmail.com</span>
+                            <span class="profession">+56 8452 58 5529</span>
+                        </div>
+                        <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <div class="button">
+                          <!-- <button class="aboutMe">About Me</button> -->
+                          <button class="hireMe">Contactáctame</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="../img/elias_web.png" alt=""> 
+                        </div>
+                        <div class="media-icons">
+                          <i class="fab fa-facebook"></i>
+                          <i class="fab fa-twitter"></i>
+                          <i class="fab fa-github"></i>
+                        </div>
+                        <div class="name-profession">
+                            <span class="name">Nombre</span>
+                            <span class="profession">correoejemplo@gmail.com</span>
+                            <span class="profession">+56 8452 58 5529</span>
+                        </div>
+                        <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <div class="button">
+                          <!-- <button class="aboutMe">About Me</button> -->
+                          <button class="hireMe">Contactáctame</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="../img/elias_web.png" alt=""> 
+                        </div>
+                        <div class="media-icons">
+                          <i class="fab fa-facebook"></i>
+                          <i class="fab fa-twitter"></i>
+                          <i class="fab fa-github"></i>
+                        </div>
+                        <div class="name-profession">
+                            <span class="name">Nombre</span>
+                            <span class="profession">correoejemplo@gmail.com</span>
+                            <span class="profession">+56 8452 58 5529</span>
+                        </div>
+                        <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <div class="button">
+                          <!-- <button class="aboutMe">About Me</button> -->
+                          <button class="hireMe">Contactáctame</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="../img/elias_web.png" alt=""> 
+                        </div>
+                        <div class="media-icons">
+                          <i class="fab fa-facebook"></i>
+                          <i class="fab fa-twitter"></i>
+                          <i class="fab fa-github"></i>
+                        </div>
+                        <div class="name-profession">
+                            <span class="name">Nombre</span>
+                            <span class="profession">correoejemplo@gmail.com</span>
+                            <span class="profession">+56 8452 58 5529</span>
+                        </div>
+                        <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <div class="button">
+                          <!-- <button class="aboutMe">About Me</button> -->
+                          <button class="hireMe">Contactáctame</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="../img/elias_web.png" alt=""> 
+                        </div>
+                        <div class="media-icons">
+                          <i class="fab fa-facebook"></i>
+                          <i class="fab fa-twitter"></i>
+                          <i class="fab fa-github"></i>
+                        </div>
+                        <div class="name-profession">
+                            <span class="name">Nombre</span>
+                            <span class="profession">correoejemplo@gmail.com</span>
+                            <span class="profession">+56 8452 58 5529</span>
+                        </div>
+                        <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <div class="button">
+                          <!-- <button class="aboutMe">About Me</button> -->
+                          <button class="hireMe">Contactáctame</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <article class="article article__proceso" id="proceso">
+        <section class="proceso">
+            <h2 class="proceso__h2">Nuestro proceso paso a paso</h2>
+            <div class="proceso__cards">
+                <div class="proceso__card">
+                    <h3 class="proceso__h3">Consulta del cliente</h3>
+                    <img src="../img/ilustrations/undraw_co-working.svg" alt="img" class="proceso__img">
+                    <p class="proceso__p">El cliente pregunta sobre los contenedores que necesita o analiza el próximo proyecto potencial para que lo ayudemos a planificar</p>
+                </div>
+                <div class="proceso__card">
+                    <h3 class="proceso__h3">Cotización de contenedores</h3>
+                    <img src="../img/ilustrations/undraw_printing_invoices_-5-r4r.svg" alt="img2" class="proceso__img">
+                    <p class="proceso__p">Una vez que se obtiene el equipo del contenedor, le proporcionamos al cliente una cotización del contenedor por correo electrónico.</p>
+                </div>
+                <div class="proceso__card">
+                    <h3 class="proceso__h3">Confirmación del cliente</h3>
+                    <img src="../img/ilustrations/undraw_business_deal.svg" alt="img3" class="proceso__img">
+                    <p class="proceso__p">Una vez que el cliente confirme que desea continuar con su pedido, solicitaremos el nombre, la dirección, el número de teléfono de contacto, el correo electrónico de contacto y la identificación fiscal de su empresa para configurar su cuenta.
+                    </p>
+                </div>
+                <div class="proceso__card">
+                    <h3 class="proceso__h3">Facturación</h3>
+                    <img src="../img/ilustrations/undraw_transfer_money.svg" alt="img4" class="proceso__img">
+                    <p class="proceso__p">Una vez que CTC reciba la información y los documentos necesarios, enviaremos al cliente una factura por correo electrónico.
+                    </p>
+                </div>
+                <div class="proceso__card">
+                    <h3 class="proceso__h3">Pago, Liberación y Contenedor</h3>
+                    <img src="../img/ilustrations/undraw_mail_re_duel.svg" alt="img5" class="proceso__img">
+                    <p class="proceso__p">Una vez que el cliente pague la factura, le enviaremos por correo electrónico una Liberación del contenedor (para que ellos programen su propia recolección del contenedor) O CTC organizará y programará la entrega del contenedor al cliente</p>
+                </div>
+                <div class="proceso__card">
+                    <h3 class="proceso__h3">Finalización del pedido</h3>
+                    <img src="../img/ilustrations/undraw_container_ship.svg" alt="img6" class="proceso__img">
+                    <p class="proceso__p">Una vez que el cliente recibe su contenedor, CTC enviará una factura revisada y finalizada que muestra el número completo del contenedor, ya que los contenedores se retiran primero de la pila de contenedores.</p>
+                </div>
+            </div>
+        </section>
+    </article>
+</main>
+<footer class="footer">
+    <div class="items">
+        <div class="item1">
+            <h4 class="footer__title">Nuestra Compañía</h4>
+            <p class="footer__paragraph">
+                Uno de los especialistas más importantes en brindar soluciones de contenedores marítimos desde 2013. Vendemos y alquilamos contenedores marítimos, así como contenedores de almacenamiento en todos los países de América del Norte, Central y del Sur.
+            </p>
+        </div>
+        <div class="item2">
+            <img src="../img/cm3.png" alt="img4">
+        </div>
+        <div class="item3">
+            <h4 class="footer__title">Nuestros Servicios</h4>
+            <ul>
+                <li class="services__item">Inicio</li>
+                <li class="services__item">Nosotros</li>
+                <li class="services__item">Contenedores</li>
+                <li class="services__item">Servicios</li>
+                <li class="services__item">Blog</li>
+                <li class="services__item">Contacto</li>
+            </ul>
+        </div>
+        <div class="item4">
+            <h4 class="footer__title">Celular</h4>
+            <p class="footer__paragraph">+51 994 608 940</p>
+            
+            <h4 class="footer__title">Horario de Atención</h4>
+            <p class="footer__paragraph">Lunes a Sábado: 8 AM - 6 PM</p>
+            
+            <h4 class="footer__title">Correo</h4>
+            <p class="footer__paragraph">info@saesperu.com</p>
+            
+            <h4 class="footer__title">Dirección</h4>
+            <p class="footer__paragraph">Av. Néstor Gambeta Km. 14.2 Subparcela A-3 – Callao Lima, Perú</p>
+        </div>
+    </div>
+    <div class="copy">
+       Saes Containers 2023 © Todos los derechos reservados.
+    </div>
+</footer>
+    <div class="wpp">
+        <img src="../img/wpp-png.png" alt="wpp">
+    </div>
+    
+</body>
+            <!-- FOOTER-->
+
+<!-- font awesome -->
+<!-- Swiper JS -->
+<script src="js/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/a5c5bf6f9c.js" crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
+<!-- Swiper JS -->
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    </script>
+</body>
+</html> 
