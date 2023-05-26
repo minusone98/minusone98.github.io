@@ -238,7 +238,7 @@ body {
     width: 3em;
 }
 .header__logo{
-    width: 4em;
+    width: 12em;
 }
 /* SLIDER ESTILOS*/
 .slider__content{
@@ -256,7 +256,7 @@ body {
     position: relative;
 }
 .slider__content .slider__card{
-    height: calc(100vh - 2.5em);
+    height: 40em;
     width: 100%;
     flex-shrink: 0;
     position: relative;
@@ -361,7 +361,6 @@ body {
 .productos__content{
     display: block;
     grid-area: productos;
-    height: 80vh;
     margin: 0 auto;
     position: relative;
     background: var(--main-color-1);
@@ -635,7 +634,7 @@ input:focus~.barra::before{
     border-radius: .7em;
     background: var(--main-color-2);
     padding: 1em;
-    height: 40em;
+    height: 39em;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -643,6 +642,7 @@ input:focus~.barra::before{
     margin-top: auto;
     cursor: pointer;
     box-shadow: .2em .2em .2em #666;
+    
 }
 .proceso__card:hover{
     scale: 1.03;
@@ -821,9 +821,42 @@ input:focus~.barra::before{
     .header__list{
         display: none;
     }
+    .header__flag{
+        display: none;
+    }
     .header__toggle{
         display: block;
         background: transparent;
         color: #000;
+    }
+    .proceso__container{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:730px){
+    .slider__cards{
+        font-size: .7em;
+    }
+    .form__textarea{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:530px){
+    .slider__h2{
+        left: 2em;
+    }
+    .slider__p{
+        left: 1em;
+    }
+    .slider__btn{
+        left: 27em;
+        transition: all .5s ease;
+    }
+    .proceso__cards{
+        margin: -20em 0;
     }
 }
