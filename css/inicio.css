@@ -345,8 +345,7 @@ body {
     padding:  .2em 1em;
     border-radius: 3em;
     animation: moverIzquierda ease 2s;
-    color: inherit;
-    color: inherit;
+    color: #fff ;
 
 }
 .slider__btn{
