@@ -672,6 +672,8 @@ input:focus~.barra::before{
 }
 .section__title--proceso{
     width: 100%;
+    color: #fff;
+
     
 }
 .proceso__card{
@@ -751,22 +753,29 @@ input:focus~.barra::before{
     hyphens: none;
     padding: .7em;
     line-height: 1.2;
+    color: #fff;
 }
 .services__item{
     line-height: 1.2em;
     padding: .2em;
     cursor: pointer;
     margin-top: .5em;
+    color: #fff;
+
 }
 .services__item:hover{
     transform: translateX(1em);
     color: var(--main-color-2);
     transition: all .2s ease;
+    color: #fff;
+
 }
 .copy{
     text-align: center;
     padding: 2em;
     border-top: .15em solid #00000079;
+    color: #fff;
+
 
 }
 .wpp{
@@ -778,6 +787,8 @@ input:focus~.barra::before{
     right: 1;
     bottom: 0;
     cursor: pointer;
+    color: #fff;
+
 }
 .wpp:hover{
     scale: 1.05;
@@ -793,6 +804,8 @@ input:focus~.barra::before{
     bottom: 0;
     right: 0;
     margin: 1em;
+    color: #fff;
+
     width: 2em;
 }
 .up__btn:hover{
