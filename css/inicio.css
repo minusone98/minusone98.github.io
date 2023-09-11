@@ -194,6 +194,8 @@ body {
 .header{
     background: red;
     display: block;
+    color: #fff;
+
 }
 .header__content{
     display: flex;
@@ -203,6 +205,7 @@ body {
     padding: 0 2em;
     color: #fff;
     background: var(--bg-color);
+    
 }
 .header__nav{
     display: block;
@@ -213,6 +216,7 @@ body {
     width: 100%;
     padding: 0 2em;
     font-weight: 500;
+    
 }
 .header__list{
     display: flex;
@@ -247,6 +251,8 @@ body {
     /* overflow-x: hidden; */
     position: relative;
     grid-area: slider;
+    color: #fff;
+
 }
 .slider__content .slider__cards{
     display: flex;
@@ -254,6 +260,8 @@ body {
     width: 100%;
     hyphens: none;
     position: relative;
+    color: #fff;
+
 }
 .slider__content .slider__card{
     height: 40em;
@@ -261,24 +269,32 @@ body {
     flex-shrink: 0;
     position: relative;
     transition: 2s;
+    color: #fff;
+
 }
 .slider__card--1{
     background: url(../img/hero1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+        color: #fff;
+
 }
 .slider__card--2{
     background: url(../img/hero2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    color: #fff;
+
 }
 .slider__card--3{
     background: url(../img/hero3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    color: #fff;
+
 }
 .slider__content .back{
     position: absolute;
@@ -288,6 +304,8 @@ body {
     border-radius: 50%;
     top: calc(50% - 2em);
     left: .7em;
+    color: #fff;
+
     text-align: center;
 }
 .slider__content .forward{
@@ -300,6 +318,8 @@ body {
     top: calc(50% - 2em);
     right: .7em;
     text-align: center;
+    color: #fff;
+
 }
 .slider__h2{
     font-size: 2.5em;
@@ -309,7 +329,8 @@ body {
     line-height: 1;
     font-family: var(--font-secundaria);
     animation: moverArriba ease 2s;
-    color: inherit;
+    color: #fff;
+
 }
 .slider__p{
     position: absolute;
@@ -325,6 +346,8 @@ body {
     border-radius: 3em;
     animation: moverIzquierda ease 2s;
     color: inherit;
+    color: inherit;
+
 }
 .slider__btn{
     position: absolute;
@@ -372,6 +395,8 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
     gap: 2em;
     padding: 4em;
+    color: #fff;
+
 }
 .section__title{
     padding: 1em;
@@ -392,6 +417,8 @@ body {
     border-bottom: 1em solid var(--main-color-2);
     border-radius: 0 3em 3em 0;
     display: block;
+    color: #fff;
+
 }
 .productos__card{
     background: var(--main-color-2);
@@ -400,12 +427,16 @@ body {
     /* margin-top: auto;
     margin: 0 auto; */
     box-shadow: .1em .1em .4em #555;
+    color: #fff;
+
 }
 .productos__card:hover{
     scale: 1.03;
     transition: all .4s ease;
     border: .1em solid #1f1a70;
     transform:translateY(-.5em);
+    color: #fff;
+
 }
 .productos__card--title{
     font-size: 1.3em;
@@ -415,6 +446,8 @@ body {
 }
 .productos__card--img{
     padding: 1em;
+    color: #fff;
+
 }
 .productos__card--p{
     text-align: center;
@@ -428,11 +461,15 @@ body {
     width: 80%;
     border-bottom: 1em solid var(--main-color-2);
     border-radius: 0 3em 3em 0;
+    color: #fff;
+
     display: block;
 }
 .form__container{
     grid-area: formulario;    
     display: block;
+    color: #fff;
+
 }
 .form{
     display: block;
@@ -440,12 +477,17 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    color: #fff;
+
 }
 .inputs{
     flex-basis: 50%;
+    color: #fff;
+
 }
 .textarea{
     flex-basis: 50%;
+    
 }
 .form__content{
     display: flex;
@@ -612,6 +654,8 @@ input:focus~.barra::before{
     align-items: center;
     justify-content: center;
     box-shadow: .2em .2em .2em black;
+    color: #fff;
+
 
 }
 .proceso__cards{
@@ -624,6 +668,7 @@ input:focus~.barra::before{
     align-items: center;
     scale: .8;
     margin-top: -4em;
+    color: #fff;
 
 }
 .section__title--proceso{
@@ -642,11 +687,14 @@ input:focus~.barra::before{
     margin-top: auto;
     cursor: pointer;
     box-shadow: .2em .2em .2em #666;
-    
+    color: #fff;
+
 }
 .proceso__card:hover{
     scale: 1.03;
     transition: scale .2s ease;
+    color: #fff;
+
 }
 .proceso__img{
     margin: 0 auto;
