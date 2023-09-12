@@ -5,7 +5,7 @@
 
 (https://minusone98.github.io/html/index.html)
 
-## Paulo - Bayron (17/05/2023)
+## Paulo (17/05/2023)
 
 ## COMENTARIO CONTEXTUAL
     El sitio web que usted verá es solo una maquetación rápida que no representa mi mejor trabajo,
