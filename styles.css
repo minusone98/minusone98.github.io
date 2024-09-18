@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    color: #000;
+}
+:root{
+    /* Colores */
+
+    --dark-orange: #f62;
+    --black:#201C1C.;
+    --black-b1: #121212;
+    --black-b2: #302C2C;
+    --black-b3: #181414;
+    --black-b4: #282424 ;
+    --white: #ededed;
+    --blue: #48e;
+    --blue-bg: #3700B3;
+    --red: #ed1b2e;
+    
+    /* Tipografía */
+    --tipo-principal: 'Roboto', sans-serif, Arial;
+    --tipo-secundaria: sans-serif, Arial,
+}
+body{
+    background: var(--white);
+    min-height: 100dvh;
+    max-width: 70em;
+    width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2em;
+
+    padding-top: 2em; /*temporal*/
+}
+
+.container{ 
+    display: flex;
+    flex-flow: column nowrap;
+    border: .2em solid var(--blue);
+}
+
+/*estilos formulario*/
+
+.data{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 2em 2em;
+}
+.data__h1{
+    background: var(--blue);
+    text-align: left;
+    font-size: 1.5em;
+    color: #fff;
+    padding: .5em 1em;
+    user-select: none;
+
+}
+.data__form{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+
+}
+.form__clientes{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+/*estilos inputs*/
+
+.form__input{
+    flex: 1;
+    width: 100%;
+    min-width: 7em;
+    padding: .4em 1em;
+    text-align: center;
+}
+.form__select{
+    width: 100%;
+    padding: .4em 0;
+    text-align: center;
+}
+.form__select, .form__input, .input__label{
+    color: #000;
+    background: #08dff761;
+    text-align: center;
+    font-size: 1.1em;
+
+}
+.form__input:focus{
+    outline: .2em solid #04174261;
+}
+.form__select:focus{
+    outline: .2em solid #04174261;
+}
+.input__container{
+    flex: 1;
+    box-shadow: .1em .1em 4px  #000;
+}
+.input__label{
+    flex: 1;
+    font-size: 1.1em;
+    min-width: 10em;
+    padding: .4em 0;
+    background: var(--blue);
+    color: #fff;
+}
+.label__span{
+    flex: 1;
+    min-width: 10em;
+    user-select: none;
+}
+.form__lineas{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+    margin-bottom: 2em;
+
+}
+.form__logistica{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+    
+
+}
+.form__submit{
+    background: var(--blue);
+    align-self: center;
+    padding: .7em 2em;
+    font-size: 1.2em;
+
+    color: var(--white);
+    box-shadow: .1em .1em 4px  #000;
+    user-select: none;
+    cursor: pointer;
+}
+.form__submit:hover{
+    background: rgb(52, 103, 180);
+}
+.form__submit:active{
+    background: #54c712;
+}
+
+/*card cliente*/
+
+.output__screen{
+    border: .2em solid var(--blue);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 100%;
+}
+.cards__container{
+}
+.cliente__card{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
+}
+.cliente__title{
+    background: var(--blue);
+    text-align: left;
+    font-size: 1.5em;
+    color: #fff;
+    padding: .5em 1em;
+}
+.client__title--green {
+    background: green;
+}
+  
+.client__title--yellow {
+    background: yellow;
+}
+  
+.client__title--gray {
+    background: #33333378;
+}
+  
+.client__title--orange {
+    background: orange;
+}
+  
+.cliente__data--container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+    gap: 1em;
+    padding: 2em 2em;
+}
+.cliente__data{
+    background: #08dff761;
+
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: .1em .1em 4px  #000;
+
+}
+.cliente__data--input{
+    width: 100%;
+    padding: .4em 1em;
+    text-align: left;
+    background: var(--blue);
+    color: #fff;
+    flex: 4;
+    hyphens: none;
+    font-size: 1.1em;
+}
+.cliente__data--output{
+    flex: 9;
+    width: 100%;
+    padding: .4em 1em;
+    text-align: center;
+    color: inherit;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        max-width: 82dvw;
+    }
+}
+@media screen and (max-width: 450px) {
+    .cliente__data--container{
+        font-size: .9em;
+        min-width: min-content;
+    }
+}

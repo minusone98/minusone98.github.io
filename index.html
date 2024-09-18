@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/main.js"></script>
+    <!-- Google Icons-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outoptionned" rel="stylesheet" />
+
+    <title>Post Venta Support </title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="data__h1">Post Venta Support </h1>
+        <div class="data">
+            <form action="form" class="data__form">
+                <!-- DATOS INFO CLIENTES  -->
+                <div class="form__clientes info-wrapper">
+                    <!-- INPUT CON FECHADEVENTA -->
+                    <div class="input__container">
+                        <label class="input__label" for="date">Fecha de Venta</label>
+                        <span class="label__span"></span>
+                        <input class="form__input form__input--date"  id="fecha-venta" type="date" name="fecha-de-venta">
+                    </div>
+                    <!-- INPUT CON name -->
+                    <div class="input__container">
+                        <label class="input__label" for="date">Nombre del titular</label>
+                        <span class="label__span"></span>
+                        <input class="form__input form__input--name" id="nombre-titular" placeholder="Ingrese nombre" type="text" name="Name">
+                    </div>
+                    <!-- INPUT CON Estado-de-solicitud -->
+                    <div class="input__container">
+                        <label class="input__label" for="date">Estado de solicitud</label>
+                        <span class="label__span"></span>
+                        <input class="form__input form__input--state"  id="estado-solicitud" placeholder="Ingrese estado de solicitud" type="text" name="Estado-de-solicitud">
+                    </div>
+                </div>
+                <!-- DATOS INFO LINEAS -->
+                <div class="form__lineas info-wrapper">
+                    <!-- seccion info lineas  -->
+                    <!-- INPUT CON n°-linea titular -->
+                    <div class="input__container">
+                        <label class="input__label" for="date">N° linea titular</label>
+                        <span class="label__span"></span>
+                        <input class="form__input form__input--number" id="n-linea-tt" placeholder="Ingrese N° linea titular" type="text" name="n-linea" >
+                    </div>
+                    <div class="input__container">
+                        <label class="input__label form__input--number" for="date">Cuentas ligadas</label>
+                        <span class="label__span form__input--number"></span>
+                        <input class="form__input form__input--number" id="lineas-ligadas" placeholder="¿Tiene cuentas ligadas?" type="number" name="cuentas asociada">
+                    </div>
+                    <!-- SELECT CON cantidad-cuentas-asociadas -->
+                    <!-- <div class="input__container">
+                        <label class="input__label" for="date">N° de las líneas</label>
+                        <span class="label__span"></span>
+                        <select class="form__select form__select--cuentas" name="cantidad-cuentas-asociadas" id="">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                        </select>
+                    </div> -->
+                </div>
+                <!-- DATOS LOGISTICA  -->
+                <div class="form__logistica info-wrapper">
+                        <!-- seccion logistica  -->
+                        <!-- SELECT CON gestion-sim -->
+                    <div class="input__container">
+                        <label class="input__label" for="date">Gestion del SIM</label>
+                        <span class="label__span"></span>
+                        <select class="form__select form__select--gestion" id="gestion-sim" name="gestion-sim" >
+                            <option>Sin PIN / Sin CHIP</option>
+                            <option>Sin PIN / Con CHIP</option>
+                            <option>Con PIN / Sin CHIP</option>
+                            <option>Con PIN / Con CHIP</option>
+                        </select>
+                     </div>
+                     <!-- formulario-enviado -->
+                     <div class="input__container">
+                        <label class="input__label" for="date">Formulario cargado</label>
+                        <span class="label__span"></span>
+                        <select class="form__select form__select--formulario"  id="form-load" name="formulario">
+                            <option>Si</option>
+                            <option>No</option>
+                        </select>
+                     </div>
+                     <!-- SELECT CON Logistica -->
+                     <div class="input__container">
+                         <label class="input__label" for="date">Logistica</label>
+                         <span class="label__span"></span>
+                         <select class="form__select form__select--logistica" id="logistica" name="Logistica" >
+                             <option></option>
+                             <option>Envío</option>
+                             <option>Casim</option>
+                         </select>
+                    </div>
+                </div>
+            </form> 
+            <button class="form__submit" id="btn-validar" role="submit" onclick="validar()" type="button">Cargar venta</button>
+        </div>
+    </div>
+    <div class="output__screen">
+        <div class="cards__container" id="client-card-container">
+            <!-- Plantilla de tarjeta -->
+            <div class="cliente__card" id="cliente-template" >
+                <h2 class="cliente__title" id="card-title">
+                    <span id="title-coment"></span>
+                </h2>
+                <div class="cliente__data--container">
+                    <div class="cliente__data">
+                        <div class="cliente__data--input">Fecha de Venta: </div>
+                        <span class="cliente__data--output" id="fecha-label">DataOutput</span>
+                    </div>
+                    <div class="cliente__data">
+                        <div class="cliente__data--input">Nombre del titular:</div>
+                        <span class="cliente__data--output" id="name-label">DataOutput</span>
+                    </div>
+                    <div class="cliente__data">
+                        <div class="cliente__data--input">Estado de solicitud:</div>
+                        <span class="cliente__data--output" id="state-label">DataOutput</span>
+                    </div>
+                    <div class="cliente__data">
+                        <div class="cliente__data--input">N° linea titular:</div>
+                        <span class="cliente__data--output" id="n-linea-label">DataOutput</span>
+                    </div>
+                    <div class="cliente__data">
+                        <div class="cliente__data--input">Cuentas ligadas:</div>
+                        <span class="cliente__data--output" id="lineas-ligadas-label">DataOutput</span>
+                    </div>
+                    <div class="cliente__data">
+                        <div class="cliente__data--input">Gestion del SIM:</div>
+                        <span class="cliente__data--output" id="gestion-sim-label">DataOutput</span>
+                    </div>
+                    <div class="cliente__data">
+                        <div class="cliente__data--input">Formulario cargado:</div>
+                        <span class="cliente__data--output" id="form-load-label">DataOutput</span>
+                    </div>
+                    <div class="cliente__data">
+                        <div class="cliente__data--input">Logistica:</div>
+                        <span class="cliente__data--output" id="logistica-label">DataOutput</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
