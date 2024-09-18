@@ -152,23 +152,26 @@ body{
 /*card cliente*/
 
 .output__screen{
-    border: .2em solid var(--blue);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     width: 100%;
 }
 .cards__container{
+    display: flex;
+    flex-flow: column;
+
 }
 .cliente__card{
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 1em;
+    border: .2em solid var(--blue);
+    background: #f0f0f0;
+    margin: 1em 0;
 }
 .cliente__title{
     background: var(--blue);
     text-align: left;
     font-size: 1.5em;
+    text-transform: uppercase;
     color: #fff;
     padding: .5em 1em;
 }
@@ -193,6 +196,9 @@ body{
     grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
     gap: 1em;
     padding: 2em 2em;
+    text-transform: uppercase;
+
+
 }
 .cliente__data{
     background: #08dff761;
@@ -203,6 +209,8 @@ body{
     justify-content: center;
     align-items: center;
     box-shadow: .1em .1em 4px  #000;
+    text-transform: uppercase;
+
 
 }
 .cliente__data--input{
@@ -213,7 +221,9 @@ body{
     color: #fff;
     flex: 4;
     hyphens: none;
-    font-size: 1.1em;
+    font-size: 1em;
+    text-transform: uppercase;
+
 }
 .cliente__data--output{
     flex: 9;
@@ -221,7 +231,9 @@ body{
     padding: .4em 1em;
     text-align: center;
     color: inherit;
-    font-size: 1.1em;
+    font-size: 1em;
+    text-transform: uppercase;
+
 }
 
 @media screen and (max-width: 1200px) {
